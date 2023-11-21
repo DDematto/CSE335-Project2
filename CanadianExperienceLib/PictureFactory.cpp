@@ -37,6 +37,15 @@ std::shared_ptr<Picture> PictureFactory::Create(std::wstring resourcesDir)
     background->SetRoot(backgroundI);
     picture->AddActor(background);
 
+    // Create a Flag and add it
+    auto flag = std::make_shared<Actor>(L"Background");
+    flag->SetClickable(false);
+    flag->SetPosition(wxPoint(800, 300));
+    auto flagI = std::make_shared<ImageDrawable>(L"Flag", imagesDir + L"/flag.png");
+    flag->AddDrawable(flagI);
+    flag->SetRoot(flagI);
+    picture->AddActor(flag);
+
     // Create and add Harold
     HaroldFactory haroldFactory;
     auto harold = haroldFactory.Create(imagesDir);
