@@ -38,14 +38,13 @@ void Polygon::AddPoint(double x, double y)
     {
         // Our polygon MUST have at least three points
         Assert(false,
-                L"You cannot add points to the polygon after it has been drawn.",
-                L"https://facweb.cse.msu.edu/cbowen/cse335/polygon/o/");
+               L"You cannot add points to the polygon after it has been drawn.",
+               L"https://facweb.cse.msu.edu/cbowen/cse335/polygon/o/");
         return;
     }
 
     mPoints.push_back(wxPoint2DDouble(x, y));
 }
-
 
 /**
  * Create a rectangle.
@@ -77,7 +76,7 @@ void Polygon::Rectangle(double x, double y, double width, double height)
     {
         // Optional automatic height determination from image
         if(!Assert(mImage != nullptr,
-               L"You must select an image before calling Rectangle with no specified height."))
+                   L"You must select an image before calling Rectangle with no specified height."))
         {
             return;
         }
@@ -115,7 +114,7 @@ void Polygon::BottomCenteredRectangle(double width, double height)
     if(width == 0)
     {
         if(!Assert(mImage != nullptr,
-                L"You must select an image before calling BottomCenteredRectangle with no width."))
+                   L"You must select an image before calling BottomCenteredRectangle with no width."))
         {
             return;
         }
@@ -125,7 +124,7 @@ void Polygon::BottomCenteredRectangle(double width, double height)
     else if(height == 0)
     {
         if(!Assert(mImage != nullptr,
-                L"You must select an image before calling BottomCenteredRectangle with no height."))
+                   L"You must select an image before calling BottomCenteredRectangle with no height."))
         {
             return;
         }
@@ -133,9 +132,8 @@ void Polygon::BottomCenteredRectangle(double width, double height)
         height = width * GetImageHeight() / GetImageWidth();
     }
 
-    Rectangle(-width/2, 0, width, height);
+    Rectangle(-width / 2, 0, width, height);
 }
-
 
 /**
  * Create a centered square at location 0,0
@@ -146,7 +144,7 @@ void Polygon::CenteredSquare(double size)
     if(size == 0)
     {
         if(!Assert(mImage != nullptr,
-                L"You must select an image before calling BottomCenteredRectangle."))
+                   L"You must select an image before calling BottomCenteredRectangle."))
         {
             return;
         }
@@ -165,7 +163,6 @@ void Polygon::CenteredSquare(double size)
 
 }
 
-
 /**
  * Create a circle centered on (0,0)
  * @param radius Circle radius
@@ -175,13 +172,12 @@ void Polygon::Circle(double radius, int steps)
 {
     mIsCircle = true;
 
-    for (int i = 0; i < steps; i++)
+    for(int i = 0; i < steps; i++)
     {
         double angle = double(i) / double(steps) * M_PI * 2;
         AddPoint(radius * cos(angle), radius * sin(angle));
     }
 }
-
 
 /**
  * Set the color of the polygon. If we set a color, images are not used.
@@ -216,8 +212,6 @@ void Polygon::SetImage(std::wstring filename)
     }
 }
 
-
-
 /**
  * Draw the polygon
  * @param graphics Graphics object to draw on
@@ -231,8 +225,8 @@ void Polygon::DrawPolygon(std::shared_ptr<wxGraphicsContext> graphics, double x,
     {
         // Our polygon MUST have at least three points
         Assert(false,
-                L"You must specify a shape when using Polygon. At least three points must be provided.",
-                L"https://facweb.cse.msu.edu/cbowen/cse335/polygon/c/");
+               L"You must specify a shape when using Polygon. At least three points must be provided.",
+               L"https://facweb.cse.msu.edu/cbowen/cse335/polygon/c/");
         return;
     }
 
@@ -246,22 +240,21 @@ void Polygon::DrawPolygon(std::shared_ptr<wxGraphicsContext> graphics, double x,
     }
 #endif
 
-    switch (mMode) {
-    case Mode::Color:
-        DrawColorPolygon(graphics, x, y, rotation);
-        break;
+    switch(mMode)
+    {
+        case Mode::Color:DrawColorPolygon(graphics, x, y, rotation);
+            break;
 
-    case Mode::Image:
-        DrawImagePolygon(graphics, x, y, rotation);
-        break;
+        case Mode::Image:DrawImagePolygon(graphics, x, y, rotation);
+            break;
 
-    default:
-        // If this assertion fails, the no color or image was
-        // indicated for this polygon. Be sure to call
-        Assert(false,
-                L"You must specify either a color or an image when using Polygon",
-                L"https://facweb.cse.msu.edu/cbowen/cse335/polygon/c/");
-        break;
+        default:
+            // If this assertion fails, the no color or image was
+            // indicated for this polygon. Be sure to call
+            Assert(false,
+                   L"You must specify either a color or an image when using Polygon",
+                   L"https://facweb.cse.msu.edu/cbowen/cse335/polygon/c/");
+            break;
     }
 
 #ifndef WIN32
@@ -271,8 +264,6 @@ void Polygon::DrawPolygon(std::shared_ptr<wxGraphicsContext> graphics, double x,
     }
 #endif
 }
-
-
 
 /**
  * Draw the polygon as a solid color-filled polygon
@@ -289,7 +280,7 @@ void Polygon::DrawColorPolygon(std::shared_ptr<wxGraphicsContext> graphics, doub
         mPath = graphics->CreatePath();
 
         mPath.MoveToPoint(mPoints[0].m_x, mPoints[0].m_y);
-        for(size_t i=1; i<mPoints.size(); i++)
+        for(size_t i = 1; i < mPoints.size(); i++)
         {
             mPath.AddLineToPoint(mPoints[i].m_x, mPoints[i].m_y);
         }
@@ -325,16 +316,18 @@ void Polygon::DrawImagePolygon(std::shared_ptr<wxGraphicsContext> graphics, doub
 #ifdef WIN32
         // Implementation of opacity for Windows systems.
         // Windows does not support transparency layers.
-        if(mOpacity < 1) {
+        if(mOpacity < 1)
+        {
             // Ensure the image has an alpha map
-            if (!mImage->HasAlpha()) {
+            if(!mImage->HasAlpha())
+            {
                 mImage->InitAlpha();
             }
 
             wxImage img = mImage->Copy();
 
             unsigned char *alpha = img.GetAlpha();
-            for(int i=0; i<img.GetWidth()*img.GetHeight(); i++)
+            for(int i = 0; i < img.GetWidth() * img.GetHeight(); i++)
             {
                 alpha[i] = int(alpha[i] * mOpacity);
             }
@@ -358,19 +351,23 @@ void Polygon::DrawImagePolygon(std::shared_ptr<wxGraphicsContext> graphics, doub
 
         for(auto point : mPoints)
         {
-            if(point.m_x < mImageClipRegionTopLeft.m_x) {
+            if(point.m_x < mImageClipRegionTopLeft.m_x)
+            {
                 mImageClipRegionTopLeft.m_x = point.m_x;
             }
 
-            if(point.m_y < mImageClipRegionTopLeft.m_y) {
+            if(point.m_y < mImageClipRegionTopLeft.m_y)
+            {
                 mImageClipRegionTopLeft.m_y = point.m_y;
             }
 
-            if(point.m_x > imageClipRegionBottomRight.m_x) {
+            if(point.m_x > imageClipRegionBottomRight.m_x)
+            {
                 imageClipRegionBottomRight.m_x = point.m_x;
             }
 
-            if(point.m_y > imageClipRegionBottomRight.m_y) {
+            if(point.m_y > imageClipRegionBottomRight.m_y)
+            {
                 imageClipRegionBottomRight.m_y = point.m_y;
             }
         }
@@ -382,7 +379,7 @@ void Polygon::DrawImagePolygon(std::shared_ptr<wxGraphicsContext> graphics, doub
         for(auto point : mPoints)
         {
             points.push_back(wxPoint(int(point.m_x - mImageClipRegionTopLeft.m_x + 0.5),
-                    int(point.m_y - mImageClipRegionTopLeft.m_y + 0.5)));
+                                     int(point.m_y - mImageClipRegionTopLeft.m_y + 0.5)));
         }
 
         mImageClipRegion = wxRegion(points.size(), &points[0]);
@@ -401,7 +398,11 @@ void Polygon::DrawImagePolygon(std::shared_ptr<wxGraphicsContext> graphics, doub
     {
         // Flip the bitmap upside down
         graphics->Scale(1, -1);
-        graphics->DrawBitmap(mGraphicsBitmap, 0, -mImageClipRegionSize.m_y, mImageClipRegionSize.m_x, mImageClipRegionSize.m_y);
+        graphics->DrawBitmap(mGraphicsBitmap,
+                             0,
+                             -mImageClipRegionSize.m_y,
+                             mImageClipRegionSize.m_x,
+                             mImageClipRegionSize.m_y);
     }
     else
     {
@@ -420,12 +421,12 @@ void Polygon::DrawImagePolygon(std::shared_ptr<wxGraphicsContext> graphics, doub
  * @param color Crosshair color (optional, default=red)
  */
 void Polygon::DrawCrosshair(std::shared_ptr<wxGraphicsContext> graphics, double x, double y,
-        int size, wxColor color)
+                            int size, wxColor color)
 {
     wxPen pen(color);
     graphics->SetPen(pen);
-    graphics->StrokeLine(x-size/2, y, x+size/2, y);
-    graphics->StrokeLine(x, y-size/2, x, y+size/2);
+    graphics->StrokeLine(x - size / 2, y, x + size / 2, y);
+    graphics->StrokeLine(x, y - size / 2, x, y + size / 2);
 }
 
 /**
@@ -443,7 +444,6 @@ int Polygon::GetImageWidth()
     return mImage->GetWidth();
 }
 
-
 /**
  * Get the height of any set image for this polygon. This may not be
  * the height we actually draw, but is the size of the polygon itself.
@@ -458,7 +458,6 @@ int Polygon::GetImageHeight()
 
     return mImage->GetHeight();
 }
-
 
 /**
  * Assertion for Polygon that provides pop-up help.
@@ -510,7 +509,6 @@ void Polygon::SetOpacity(double opacity)
     }
 }
 
-
 /**
  * Get the average luminance of a block of pixels in a supplied image.
  * @param x Top left X in pixels
@@ -526,16 +524,16 @@ double Polygon::AverageLuminance(int x, int y, int wid, int hit)
     double sum = 0;
     int cnt = 0;
 
-    for (int i = x; i < x + wid; i++)
+    for(int i = x; i < x + wid; i++)
     {
-        if (i < 0 || i >= GetImageWidth())
+        if(i < 0 || i >= GetImageWidth())
         {
             continue;
         }
 
-        for (int j = y; j < y + hit; j++)
+        for(int j = y; j < y + hit; j++)
         {
-            if (j < 0 || j >= GetImageHeight())
+            if(j < 0 || j >= GetImageHeight())
             {
                 continue;
             }
@@ -548,7 +546,7 @@ double Polygon::AverageLuminance(int x, int y, int wid, int hit)
         }
     }
 
-    if (cnt == 0)
+    if(cnt == 0)
     {
         return 0;
     }
@@ -605,7 +603,7 @@ wxRect2DDouble Polygon::BoundingBox()
     if(mIsCircle)
     {
         auto radius = Radius();
-        return wxRect2DDouble(-radius, -radius, radius*2, radius*2);
+        return wxRect2DDouble(-radius, -radius, radius * 2, radius * 2);
     }
 
     auto p1x = mPoints[0].m_x;
@@ -631,7 +629,8 @@ wxRect2DDouble Polygon::BoundingBox()
  * @param msg Message to display
  * @param url Optional URL for help
  */
-void Polygon::DelayedMessage::Fire(const wxString& msg, const wxString& url) {
+void Polygon::DelayedMessage::Fire(const wxString &msg, const wxString &url)
+{
     if(mFired)
     {
         return;
@@ -643,7 +642,6 @@ void Polygon::DelayedMessage::Fire(const wxString& msg, const wxString& url) {
     mFired = true;
 }
 
-
 /**
  * Handle the timer event so we can display the dialog box.
  */
@@ -651,27 +649,27 @@ void Polygon::DelayedMessage::Notify()
 {
     wxDialog dialog(wxTheApp->GetTopWindow(), wxID_ANY, L"Polygon Class Usage Error");
 
-    dialog.SetSizeHints( wxDefaultSize, wxDefaultSize );
+    dialog.SetSizeHints(wxDefaultSize, wxDefaultSize);
 
-    auto sizer = new wxBoxSizer( wxVERTICAL );
+    auto sizer = new wxBoxSizer(wxVERTICAL);
 
-    auto m_staticText1 = new wxStaticText( &dialog, wxID_ANY, mMessage, wxDefaultPosition, wxDefaultSize, wxALIGN_CENTER_HORIZONTAL );
-    m_staticText1->Wrap( 300 );
-    sizer->Add( m_staticText1, 0, wxALL|wxEXPAND, 15 );
+    auto m_staticText1 =
+        new wxStaticText(&dialog, wxID_ANY, mMessage, wxDefaultPosition, wxDefaultSize, wxALIGN_CENTER_HORIZONTAL);
+    m_staticText1->Wrap(300);
+    sizer->Add(m_staticText1, 0, wxALL | wxEXPAND, 15);
 
     if(!mURL.IsEmpty())
     {
-        auto m_staticText2 = new wxHyperlinkCtrl( &dialog, wxID_ANY, mURL, mURL);
-        sizer->Add( m_staticText2, 0, wxALL, 5 );
+        auto m_staticText2 = new wxHyperlinkCtrl(&dialog, wxID_ANY, mURL, mURL);
+        sizer->Add(m_staticText2, 0, wxALL, 5);
     }
 
-    auto m_button1 = new wxButton( &dialog, wxID_OK, wxT("Ok"), wxDefaultPosition, wxDefaultSize, 0 );
-    sizer->Add( m_button1, 0, wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
+    auto m_button1 = new wxButton(&dialog, wxID_OK, wxT("Ok"), wxDefaultPosition, wxDefaultSize, 0);
+    sizer->Add(m_button1, 0, wxALIGN_CENTER_HORIZONTAL | wxALL, 5);
 
-
-    dialog.SetSizer( sizer );
+    dialog.SetSizer(sizer);
     dialog.Layout();
-    sizer->Fit( &dialog );
+    sizer->Fit(&dialog);
 
     dialog.Centre(wxBOTH);
     dialog.ShowModal();

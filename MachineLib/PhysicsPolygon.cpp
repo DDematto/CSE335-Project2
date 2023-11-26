@@ -118,8 +118,15 @@ wxPoint2DDouble cse335::PhysicsPolygon::GetPosition()
  */
 void cse335::PhysicsPolygon::SetRotation(double rotation)
 {
-    mBody->SetTransform(mBody->GetPosition(), rotation * M_PI * 2);
-    mBody->SetGravityScale(0);
+    if(mBody != nullptr)
+    {
+        mBody->SetTransform(mBody->GetPosition(), rotation * M_PI * 2);
+        mBody->SetGravityScale(0);
+    }
+    else
+    {
+        SetInitialRotation(rotation);
+    }
 }
 
 
@@ -129,8 +136,17 @@ void cse335::PhysicsPolygon::SetRotation(double rotation)
  */
 double cse335::PhysicsPolygon::GetRotation()
 {
-    auto rotation = mBody->GetAngle();
-    return rotation / (M_PI * 2);
+    if(mBody != nullptr)
+    {
+        auto rotation = mBody->GetAngle();
+        return rotation / (M_PI * 2);
+    }
+    else
+    {
+        auto rotation = mInitialRotation;
+        return rotation / (M_PI * 2);
+    }
+
 }
 
 
@@ -174,7 +190,10 @@ void cse335::PhysicsPolygon::SetPhysics(double density, double friction, double 
  */
 void cse335::PhysicsPolygon::SetAngularVelocity(double speed)
 {
-    mBody->SetAngularVelocity(speed * M_PI * 2);
+    if(mBody != nullptr)
+    {
+        mBody->SetAngularVelocity(speed * M_PI * 2);
+    }
 }
 
 

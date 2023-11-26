@@ -8,17 +8,16 @@
 
 #include "pch.h"
 #include "MachineSystemFactory.h"
-#include "MachineSystemStandin.h"
+#include "MachineSystem.h"
 
 /**
  * Constructor
  * @param resourcesDir Directory to load resources from
  */
-MachineSystemFactory::MachineSystemFactory(std::wstring resourcesDir) :
-    mResourcesDir(resourcesDir)
+MachineSystemFactory::MachineSystemFactory(std::wstring resourcesDir) : mResourcesDir(resourcesDir)
 {
-}
 
+}
 
 /**
  * Create a machine system object
@@ -29,7 +28,7 @@ MachineSystemFactory::MachineSystemFactory(std::wstring resourcesDir) :
  */
 std::shared_ptr<IMachineSystem> MachineSystemFactory::CreateMachineSystem()
 {
-    return std::make_shared<MachineSystemStandin>();
+    return std::make_shared<MachineSystem>(mResourcesDir);
 }
 
 

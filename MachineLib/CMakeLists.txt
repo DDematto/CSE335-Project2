@@ -15,6 +15,17 @@ set(SOURCE_FILES
         ContactListener.h
         MachineSystemStandin.cpp
         MachineSystemStandin.h
+        Body.h Body.cpp
+        Component.h Component.cpp
+        ComponentVisitor.h
+        DynamicBody.h DynamicBody.cpp
+        Goal.h Goal.cpp
+        HamsterAndConveyorFactory.h HamsterAndConveyorFactory.cpp
+        InstallComponentVisitor.h
+        Machine1Factory.h Machine1Factory.cpp
+        MachineActual.h MachineActual.cpp
+        MachineCFactory.h MachineCFactory.cpp
+        MachineSystem.h MachineSystem.cpp
 )
 
 # Removed:

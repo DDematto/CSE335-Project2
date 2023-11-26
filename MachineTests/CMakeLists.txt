@@ -2,7 +2,8 @@ project(MachineTests)
 
 set(TEST_FILES
     gtest_main.cpp
-    MachineTest.cpp)
+    MachineTest.cpp
+        MachineActualTest.cpp)
 
 # Include the MachineLib source directory to support testing of any classes there
 include_directories("../${MACHINE_LIBRARY}")

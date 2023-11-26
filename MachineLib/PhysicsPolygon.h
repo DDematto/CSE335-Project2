@@ -7,13 +7,17 @@
  *
  * Note: Dimensions for the PhysicsPolygon object are in
  * centimeters.
+ *
+ * Version history:
+ * 1.00 Initial version for FS23 project 2
+ * 1.01 Revised to work prior to physics installation
  */
 
 #pragma once
 
 #include "Polygon.h"
-#include <b2_math.h>
-#include <b2_body.h>
+#include "b2_math.h"
+#include "b2_body.h"
 
 class b2Body;
 class b2World;
@@ -78,7 +82,7 @@ public:
      * Set the component initial rotation
      * @param r Rotation in turns (0-1 for one rotation)
      */
-    void SetInitialRotation(double r) {mInitialRotation = r * M_PI * 2;}
+    void SetInitialRotation(double r) { mInitialRotation = r * M_PI * 2; }
 
     void SetRotation(double rotation);
 

@@ -11,10 +11,8 @@
 #include "Actor.h"
 #include "ImageDrawable.h"
 
-
 /// Directory within resources that contains the images.
 const std::wstring ImagesDirectory = L"/images";
-
 
 /**
  * Factory method to create a new picture.
@@ -31,18 +29,18 @@ std::shared_ptr<Picture> PictureFactory::Create(std::wstring resourcesDir)
     auto background = std::make_shared<Actor>(L"Background");
     background->SetClickable(false);
     background->SetPosition(wxPoint(0, 0));
-    auto backgroundI =
-            std::make_shared<ImageDrawable>(L"Background", imagesDir + L"/Background.jpg");
+    auto backgroundI = std::make_shared<ImageDrawable>(L"Background", imagesDir + L"/Background.jpg");
     background->AddDrawable(backgroundI);
     background->SetRoot(backgroundI);
     picture->AddActor(background);
 
     // Create a Flag and add it
     auto flag = std::make_shared<Actor>(L"Background");
-    flag->SetClickable(false);
-    flag->SetPosition(wxPoint(800, 300));
+    flag->SetClickable(true);
+    flag->SetPosition(wxPoint(900, 400));
     auto flagI = std::make_shared<ImageDrawable>(L"Flag", imagesDir + L"/flag.png");
     flag->AddDrawable(flagI);
+    flagI->SetCenter(wxPoint(127, 294));
     flag->SetRoot(flagI);
     picture->AddActor(flag);
 
