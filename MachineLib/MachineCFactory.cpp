@@ -53,7 +53,7 @@ std::shared_ptr<MachineActual> MachineCFactory::Create()
     auto basketball1 = std::make_shared<DynamicBody>();
     basketball1->Circle(12);
     basketball1->SetImage(mImagesDir + L"/basketball1.png");
-    basketball1->SetInitialPosition(0, 353);
+    basketball1->SetInitialPosition(270 - 30, 353);
     basketball1->SetDynamic();
     basketball1->SetPhysics(1, 0.5, 0.6);
     machine->AddComponent(basketball1);

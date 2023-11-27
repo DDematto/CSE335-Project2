@@ -49,11 +49,9 @@ Goal::Goal(std::wstring imagesDir)
     mHoop.SetImage(imagesDir + GoalImage);
 
     mPost.BottomCenteredRectangle(PostSize);
-    mPost.SetInitialPosition(20, 0);
     mPost.SetColor(*wxBLUE);
 
     mTarget.BottomCenteredRectangle(TargetSize);
-    mTarget.SetInitialPosition(-13, 165);
     mTarget.SetColor(*wxBLUE);
 }
 
@@ -64,13 +62,13 @@ Goal::Goal(std::wstring imagesDir)
 void Goal::Draw(std::shared_ptr<wxGraphicsContext> graphics)
 {
     graphics->PushState();
-    graphics->Translate(mPosition.x, mPosition.y);
 
-    mHoop.DrawPolygon(graphics, 0, 0, 0);
-    // mPost.Draw(graphics);
-    // mTarget.Draw(graphics);
+    mHoop.DrawPolygon(graphics, mPosition.x, mPosition.y, 0);
+    mPost.Draw(graphics);
+    mTarget.Draw(graphics);
 
     // Draw the scoreboard based on the image specified
+    graphics->Translate(mPosition.x, mPosition.y);
     graphics->SetBrush(wxBrush(ScoreboardBackgroundColor));
     graphics->SetPen(wxPen(*wxBLACK, ScoreboarderLineWidth));
     graphics->DrawRectangle(ScoreboardRectangle.m_x,
@@ -130,4 +128,6 @@ void Goal::PreSolve(b2Contact *contact, const b2Manifold *manifold)
 void Goal::SetPosition(int x, int y)
 {
     mPosition = wxPoint(x, y);
+    mTarget.SetInitialPosition(x - 13, y + 165);
+    mPost.SetInitialPosition(x + 20, y);
 }
