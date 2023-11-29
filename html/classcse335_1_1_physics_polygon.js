@@ -3,6 +3,7 @@ var classcse335_1_1_physics_polygon =
     [ "PhysicsPolygon", "classcse335_1_1_physics_polygon.html#a0c63c24e02b33883ee9887d419f5eea6", null ],
     [ "PhysicsPolygon", "classcse335_1_1_physics_polygon.html#ac8112fbb856f48f3a531336fcc0098d4", null ],
     [ "Draw", "classcse335_1_1_physics_polygon.html#ac8ab6288499b8d309cf6df41353c3a1e", null ],
+    [ "DrawPolygon", "classcse335_1_1_physics_polygon.html#af336a05ec5d13698e16beccbd62f3512", null ],
     [ "GetBody", "classcse335_1_1_physics_polygon.html#abc0352fd1508370ca2252e9207b093c1", null ],
     [ "GetPosition", "classcse335_1_1_physics_polygon.html#a1a4bbd92aa687afef1507fa8d87b0056", null ],
     [ "GetRotation", "classcse335_1_1_physics_polygon.html#a42923d2b5040bf93cb9ed6af41a5f3b4", null ],

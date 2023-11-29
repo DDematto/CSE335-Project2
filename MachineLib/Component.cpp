@@ -23,25 +23,6 @@ void Component::Draw(std::shared_ptr<wxGraphicsContext> graphics) {}
  */
 void Component::Update(double elapsed)
 {
-    // Implement update code here
-}
-
-/**
- * Connect this component to another component
- * @param component The component to connect to
- */
-void Component::Connect(std::shared_ptr<Component> component)
-{
-    // Implement connection code here
-}
-
-/**
- * Set the rotation of this component
- * @param rotation The rotation in degrees
- */
-void Component::SetRotation(double rotation)
-{
-    // Implement rotation setting code here
 }
 
 

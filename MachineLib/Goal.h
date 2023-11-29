@@ -34,13 +34,20 @@ private:
     wxPoint mPosition;
 
 public:
+    /// Constructor
     Goal(std::wstring path);
 
-    void BeginContact(b2Contact *contact);
+    /// Copy constructor (disabled)
+    Goal(const Goal &) = delete;
+
+    /// Assignment operator (disabled)
+    void operator=(const Goal &) = delete;
+
+    void BeginContact(b2Contact *contact) override;
 
     void Draw(std::shared_ptr<wxGraphicsContext> graphics) override;
 
-    void PreSolve(b2Contact *contact, const b2Manifold *manifold);
+    void PreSolve(b2Contact *contact, const b2Manifold *manifold) override;
 
     /**
      * Visitor Function
@@ -64,6 +71,11 @@ public:
      * @return PhysicsPolygon
      */
     cse335::PhysicsPolygon *GetPost() { return &mPost; };
+
+    /**
+     * Reset Goal Score when Going Back in Frames
+     */
+    void ResetScore() { mScore = 0; }
 };
 
 #endif //CANADIANEXPERIENCE_MACHINELIB_GOAL_H

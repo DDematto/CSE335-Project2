@@ -9,6 +9,7 @@
 #include "MachineSystem.h"
 #include "ContactListener.h"
 #include "InstallComponentVisitor.h"
+#include "ResetComponentsVisitor.h"
 
 /**
  * Constructor
@@ -86,10 +87,12 @@ void MachineActual::Reset()
 
     // Instantiate the InstallComponentVisitor
     InstallComponentVisitor installer(mWorld, mContactListener);
+    ResetComponentVisitor reset;
 
     for(auto &component : mComponents)
     {
         component->Accept(installer);
+        component->Accept(reset);
     }
 }
 

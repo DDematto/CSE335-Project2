@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['targetsize_0',['TargetSize',['../_goal_8cpp.html#a175d1097514dc80fdefaeea8b4cbb6ed',1,'Goal.cpp']]],
-  ['tickfontsize_1',['TickFontSize',['../_view_timeline_8cpp.html#a8ab757fdd9371e37234303e823b4c70a',1,'ViewTimeline.cpp']]],
-  ['ticklong_2',['TickLong',['../_view_timeline_8cpp.html#a897dba2e625242609ec8ab570c0a35e7',1,'ViewTimeline.cpp']]],
-  ['tickshort_3',['TickShort',['../_view_timeline_8cpp.html#a07b719855173cf38db9f73c533533324',1,'ViewTimeline.cpp']]],
-  ['tickspacing_4',['TickSpacing',['../_view_timeline_8cpp.html#a74f095c6b0b9640491938519705f01d3',1,'ViewTimeline.cpp']]],
-  ['ticktop_5',['TickTop',['../_view_timeline_8cpp.html#a0b874a73105ac296927cbd8aad4275b6',1,'ViewTimeline.cpp']]]
+  ['scoreboardbackgroundcolor_0',['ScoreboardBackgroundColor',['../_goal_8cpp.html#a93e25b59814a6eb72ad3dd5be30de386',1,'Goal.cpp']]],
+  ['scoreboarderlinewidth_1',['ScoreboarderLineWidth',['../_goal_8cpp.html#ad8230a1042aed625ba469d2d4d7c8250',1,'Goal.cpp']]],
+  ['scoreboardfontsize_2',['ScoreboardFontSize',['../_goal_8cpp.html#aa5744213686886ad4cb47c274fad506e',1,'Goal.cpp']]],
+  ['scoreboardrectangle_3',['ScoreboardRectangle',['../_goal_8cpp.html#ad96e2d98eea155217b07637681949023',1,'Goal.cpp']]],
+  ['scoreboardtextlocation_4',['ScoreboardTextLocation',['../_goal_8cpp.html#ad6dd8e7ab784e405010322e5d3fb5c77',1,'Goal.cpp']]]
 ];

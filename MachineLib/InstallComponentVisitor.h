@@ -12,6 +12,8 @@
 #include "ComponentVisitor.h"
 #include "Body.h"
 #include "Goal.h"
+#include "Hamster.h"
+#include "Conveyor.h"
 
 /**
  * Class that installs physics to all components
@@ -33,6 +35,12 @@ public:
      */
     InstallComponentVisitor(std::shared_ptr<b2World> world, std::shared_ptr<ContactListener> contactListener) : mWorld(
         world), mContactListener(contactListener) {}
+
+    /// Copy constructor (disabled)
+    InstallComponentVisitor(const InstallComponentVisitor &) = delete;
+
+    /// Assignment operator (disabled)
+    void operator=(const InstallComponentVisitor &) = delete;
 
     /**
      * Ran on all Body Components
@@ -60,6 +68,8 @@ public:
      */
     void VisitConveyor(Conveyor *conveyor) override
     {
+        conveyor->GetConveyor()->InstallPhysics(mWorld);
+        mContactListener->Add(conveyor->GetConveyor()->GetBody(), conveyor);
     }
 
     /**
@@ -68,6 +78,8 @@ public:
      */
     void VisitHamster(Hamster *hamster) override
     {
+        hamster->GetCage()->InstallPhysics(mWorld);
+        mContactListener->Add(hamster->GetCage()->GetBody(), hamster);
     }
 };
 

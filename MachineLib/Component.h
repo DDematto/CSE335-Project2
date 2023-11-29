@@ -18,9 +18,13 @@ private:
 public:
     Component();
 
+    /// Copy constructor (disabled)
+    Component(const Component &) = delete;
+
+    /// Assignment operator (disabled)
+    void operator=(const Component &) = delete;
+
     virtual void Draw(std::shared_ptr<wxGraphicsContext> graphics);
-    virtual void Connect(std::shared_ptr<Component> component);
-    virtual void SetRotation(double rotation);
     virtual void Update(double elapsed);
 
     /**

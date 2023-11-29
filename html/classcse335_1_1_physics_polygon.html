@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('classcse335_1_1_physics_polygon.html',
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classcse335_1_1_physics_polygon-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">cse335::PhysicsPolygon Class Reference</div></div>
@@ -200,6 +201,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const 
 <tr class="memitem:ad2d6109bb92d31ffc96a6f908adf00c1 inherit pub_methods_classcse335_1_1_polygon" id="r_ad2d6109bb92d31ffc96a6f908adf00c1"><td class="memItemLeft" align="right" valign="top">wxRect2DDouble&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcse335_1_1_polygon.html#ad2d6109bb92d31ffc96a6f908adf00c1">BoundingBox</a> ()</td></tr>
 <tr class="separator:ad2d6109bb92d31ffc96a6f908adf00c1 inherit pub_methods_classcse335_1_1_polygon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af336a05ec5d13698e16beccbd62f3512" id="r_af336a05ec5d13698e16beccbd62f3512"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcse335_1_1_physics_polygon.html#af336a05ec5d13698e16beccbd62f3512">DrawPolygon</a> (std::shared_ptr&lt; wxGraphicsContext &gt; graphics, double x, double y, double rotation)</td></tr>
+<tr class="separator:af336a05ec5d13698e16beccbd62f3512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a210643445257a8ac2815edb89484f362" id="r_a210643445257a8ac2815edb89484f362"><td class="memItemLeft" align="right" valign="top">b2Body *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcse335_1_1_physics_polygon.html#a210643445257a8ac2815edb89484f362">mBody</a> = nullptr</td></tr>
@@ -279,6 +285,63 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>mRestitution</b> = 
 <p>Draw the component </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">graphics</td><td>Graphics device to render to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af336a05ec5d13698e16beccbd62f3512" name="af336a05ec5d13698e16beccbd62f3512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af336a05ec5d13698e16beccbd62f3512">&#9670;&#160;</a></span>DrawPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Polygon::DrawPolygon </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; wxGraphicsContext &gt;&#160;</td>
+          <td class="paramname"><em>graphics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rotation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Draw the polygon </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">graphics</td><td>Graphics object to draw on </td></tr>
+    <tr><td class="paramname">x</td><td>X location to draw in pixels </td></tr>
+    <tr><td class="paramname">y</td><td>Y location to draw in pixels </td></tr>
+    <tr><td class="paramname">rotation</td><td>Rotation in turns (0-1) </td></tr>
   </table>
   </dd>
 </dl>

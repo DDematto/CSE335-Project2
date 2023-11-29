@@ -9,7 +9,7 @@
 #ifndef CANADIANEXPERIENCE_MACHINELIB_HAMSTERANDCONVEYORFACTORY_H
 #define CANADIANEXPERIENCE_MACHINELIB_HAMSTERANDCONVEYORFACTORY_H
 
-class Machine;
+class MachineActual;
 class Hamster;
 class Conveyor;
 class Body;
@@ -38,7 +38,7 @@ class HamsterAndConveyorFactory
 {
 private:
     /// The machine we are adding these components to
-    std::shared_ptr<Machine> mMachine;
+    std::shared_ptr<MachineActual> mMachine;
 
     /// The directory for the images
     std::wstring mImagesDir;
@@ -55,7 +55,7 @@ public:
      * @param machine The Machine to add the components to
      * @param imagesDir Directory containing the images
      */
-    HamsterAndConveyorFactory(std::shared_ptr<Machine> machine, std::wstring imagesDir) :
+    HamsterAndConveyorFactory(std::shared_ptr<MachineActual> machine, std::wstring imagesDir) :
         mMachine(machine), mImagesDir(imagesDir) {}
 
     /// Default constructor (disabled)
@@ -75,13 +75,13 @@ public:
      * Get the constructed Hamster object
      * @return Hamster object
      */
-    std::shared_ptr<Hamster> GetHamster() {return mHamster;}
+    std::shared_ptr<Hamster> GetHamster() { return mHamster; }
 
     /**
      * Get the constructed Conveyor object
      * @return Conveyor object
      */
-    std::shared_ptr<Conveyor> GetConveyor() {return mConveyor;}
+    std::shared_ptr<Conveyor> GetConveyor() { return mConveyor; }
 };
 
 #endif //CANADIANEXPERIENCE_MACHINELIB_HAMSTERANDCONVEYORFACTORY_H

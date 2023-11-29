@@ -9,10 +9,11 @@
 #include "Body.h"
 #include "Goal.h"
 #include "DynamicBody.h"
-//#include "Pulley.h"
-//#include "Hamster.h"
-//#include "Conveyor.h"
-//#include "HamsterAndConveyorFactory.h"
+#include "Pulley.h"
+#include "Hamster.h"
+#include "KinematicBody.h"
+#include "Conveyor.h"
+#include "HamsterAndConveyorFactory.h"
 
 /// The images directory in resources
 const std::wstring ImagesDirectory = L"/images";
@@ -56,17 +57,17 @@ std::shared_ptr<MachineActual> Machine1Factory::Create()
     floor->SetImage(mImagesDir + L"/floor.png");
     machine->AddComponent(floor);
 
-//    //
-//    // Create the top beam and the basketball
-//    // that rolls off of it
-//    //
-//    TopBeamAndRamp(machine);
-//
-//    //
-//    // Create the beam with the hamster driving a
-//    // spinning arm that hits the ball to make it roll
-//    //
-//    BeamAndSpinningArm(machine);
+    //
+    // Create the top beam and the basketball
+    // that rolls off of it
+    //
+    TopBeamAndRamp(machine);
+
+    //
+    // Create the beam with the hamster driving a
+    // spinning arm that hits the ball to make it roll
+    //
+    BeamAndSpinningArm(machine);
 
     //
     // Create a stack of dominos
@@ -82,20 +83,20 @@ std::shared_ptr<MachineActual> Machine1Factory::Create()
 
     DominoStack(machine, DominoStack2Position);
 
-//    //
-//    // Create a factory that will manufacture hamster, pulley,
-//    // pulley, and conveyor assemblies
-//    //
-//    HamsterAndConveyorFactory hamsterAndConveyorFactory(machine, mImagesDir);
-//
-//    //
-//    // First conveyor with a ball sitting on it
-//    //
-//    hamsterAndConveyorFactory.Create(wxPoint2DDouble(240, 0), wxPoint2DDouble(100, 90));
-//    hamsterAndConveyorFactory.AddBall(40);
-//    auto hamster1 = hamsterAndConveyorFactory.GetHamster();
-//    auto conveyor1 = hamsterAndConveyorFactory.GetConveyor();
-//    hamster1->SetSpeed(-1);
+    //
+    // Create a factory that will manufacture hamster, pulley,
+    // pulley, and conveyor assemblies
+    //
+    HamsterAndConveyorFactory hamsterAndConveyorFactory(machine, mImagesDir);
+
+    //
+    // First conveyor with a ball sitting on it
+    //
+    hamsterAndConveyorFactory.Create(wxPoint2DDouble(240, 0), wxPoint2DDouble(100, 90));
+    hamsterAndConveyorFactory.AddBall(40);
+    auto hamster1 = hamsterAndConveyorFactory.GetHamster();
+    auto conveyor1 = hamsterAndConveyorFactory.GetConveyor();
+    hamster1->SetSpeed(-1);
 
     //
     // Second conveyor with a ball on it
@@ -106,21 +107,21 @@ std::shared_ptr<MachineActual> Machine1Factory::Create()
     // Add this first, so it is behind the second conveyor pulleys
     DominoesOnBeam(machine, conveyor2position + wxPoint2DDouble(140, 0));
 
-//    hamsterAndConveyorFactory.Create(conveyor1->GetPosition() + wxPoint2DDouble(-105, -40), conveyor2position);
-//    hamsterAndConveyorFactory.AddBall(-40);
-//    auto hamster2 = hamsterAndConveyorFactory.GetHamster();
-//    auto conveyor2 = hamsterAndConveyorFactory.GetConveyor();
-//
-//    //
-//    // Third hamster/conveyor assembly.
-//    //
-//    wxPoint2DDouble conveyor3position(150, 200);
-//
-//    hamsterAndConveyorFactory.Create(conveyor2position + wxPoint2DDouble(260, 20), conveyor3position);
-//    hamsterAndConveyorFactory.AddBall(-40);
-//    auto hamster3 = hamsterAndConveyorFactory.GetHamster();
-//    hamster3->SetSpeed(1.5);
-//    auto conveyor3 = hamsterAndConveyorFactory.GetConveyor();
+    hamsterAndConveyorFactory.Create(conveyor1->GetPosition() + wxPoint2DDouble(-105, -40), conveyor2position);
+    hamsterAndConveyorFactory.AddBall(-40);
+    auto hamster2 = hamsterAndConveyorFactory.GetHamster();
+    auto conveyor2 = hamsterAndConveyorFactory.GetConveyor();
+
+    //
+    // Third hamster/conveyor assembly.
+    //
+    wxPoint2DDouble conveyor3position(150, 200);
+
+    hamsterAndConveyorFactory.Create(conveyor2position + wxPoint2DDouble(260, 20), conveyor3position);
+    hamsterAndConveyorFactory.AddBall(-40);
+    auto hamster3 = hamsterAndConveyorFactory.GetHamster();
+    hamster3->SetSpeed(1.5);
+    auto conveyor3 = hamsterAndConveyorFactory.GetConveyor();
 
     //
     // We add the baskedball goal last, so all basketballs
@@ -216,24 +217,25 @@ void Machine1Factory::BeamAndSpinningArm(std::shared_ptr<MachineActual> machine)
     //
     // The hamster motor for the second-beam
     //
-//    auto hamster = std::make_shared<Hamster>(mImagesDir);
-//    hamster->SetPosition(-220, 185);
-//    hamster->SetInitiallyRunning(true);      // Initially running
-//    hamster->SetSpeed(0.60);
-//    machine->AddComponent(hamster);
-//    auto hamster1shaft = hamster->GetShaftPosition();
-//
-//    auto arm = std::make_shared<Body>();
-//    arm->SetInitialPosition(hamster1shaft);
-//    arm->AddPoint(-7, 10);
-//    arm->AddPoint(7, 10);
-//    arm->AddPoint(7, -60);
-//    arm->AddPoint(-7, -60);
-//    arm->SetImage(mImagesDir + L"/arm.png");
-//    arm->SetKinematic();
-//    machine->AddComponent(arm);
-//
-//    hamster->GetSource()->AddSink(arm);
+    auto hamster = std::make_shared<Hamster>(mImagesDir);
+    hamster->SetPosition(-220, 185);
+    hamster->SetInitiallyRunning(true);      // Initially running
+    hamster->SetSpeed(0.6);
+    machine->AddComponent(hamster);
+
+    auto hamster1shaft = hamster->GetShaftPosition();
+
+    auto arm = std::make_shared<KinematicBody>();
+    arm->SetInitialPosition(hamster1shaft.m_x, hamster1shaft.m_y);
+    arm->AddPoint(-7, 10);
+    arm->AddPoint(7, 10);
+    arm->AddPoint(7, -60);
+    arm->AddPoint(-7, -60);
+    arm->SetImage(mImagesDir + L"/arm.png");
+    arm->SetKinematic();
+    machine->AddComponent(arm);
+
+    hamster->GetSource()->ConnectSink(arm);
 }
 
 /**

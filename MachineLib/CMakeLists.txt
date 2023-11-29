@@ -18,7 +18,7 @@ set(SOURCE_FILES
         Body.h Body.cpp
         Component.h Component.cpp
         ComponentVisitor.h
-        DynamicBody.h DynamicBody.cpp
+        DynamicBody.h
         Goal.h Goal.cpp
         HamsterAndConveyorFactory.h HamsterAndConveyorFactory.cpp
         InstallComponentVisitor.h
@@ -26,6 +26,17 @@ set(SOURCE_FILES
         MachineActual.h MachineActual.cpp
         MachineCFactory.h MachineCFactory.cpp
         MachineSystem.h MachineSystem.cpp
+        Hamster.cpp
+        Hamster.h
+        RotationSource.cpp
+        RotationSource.h
+        RotationSink.h
+        KinematicBody.h
+        Pulley.cpp
+        Pulley.h
+        Conveyor.cpp
+        Conveyor.h
+        ResetComponentsVisitor.h
 )
 
 # Removed:

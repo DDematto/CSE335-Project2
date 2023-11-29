@@ -1,11 +1,13 @@
 var class_machine_actual =
 [
     [ "MachineActual", "class_machine_actual.html#a98c133b64629b1e9ef8be2385506f351", null ],
+    [ "MachineActual", "class_machine_actual.html#a739a53d053567b3d86d0ece78294b701", null ],
     [ "AddComponent", "class_machine_actual.html#a0aa581652caa5d5a77cb987e48b39063", null ],
     [ "Draw", "class_machine_actual.html#a85cb5534761dea4810554e398a2887a6", null ],
     [ "GetComponents", "class_machine_actual.html#aad6b4155be432a41e9b3eecf9929bcd4", null ],
     [ "GetLocation", "class_machine_actual.html#a76413d1a114861b8d95b56f668a9a0e1", null ],
     [ "GetMachineNumber", "class_machine_actual.html#aea4067ad5083d46b40f84e08282de5a1", null ],
+    [ "operator=", "class_machine_actual.html#a6542cff5474d9c7f0a801579cb237dcf", null ],
     [ "Reset", "class_machine_actual.html#ad5e1ca01c0bea3cfe46ae86c27e6f99d", null ],
     [ "SetLocation", "class_machine_actual.html#a9df93d1fb3c1a9fa6b970103cb988069", null ],
     [ "SetMachineNumber", "class_machine_actual.html#a47d1faf639a6a7ed1c0157e95185dca7", null ],

@@ -3,7 +3,7 @@ var searchData=
   ['imagedrawable_0',['ImageDrawable',['../class_image_drawable.html#ac049dfbf2e942db6ee310017c0920e4f',1,'ImageDrawable']]],
   ['initialize_1',['Initialize',['../class_main_frame.html#a24d3e82e4361b803cfb67a2983c37d4d',1,'MainFrame']]],
   ['insertkeyframe_2',['InsertKeyframe',['../class_anim_channel.html#a6fb8512fabdd10ad2270b8b8ec8f61ae',1,'AnimChannel']]],
-  ['installcomponentvisitor_3',['InstallComponentVisitor',['../class_install_component_visitor.html#a381e97a5472441c48ee94fe44e60dead',1,'InstallComponentVisitor']]],
+  ['installcomponentvisitor_3',['installcomponentvisitor',['../class_install_component_visitor.html#a381e97a5472441c48ee94fe44e60dead',1,'InstallComponentVisitor::InstallComponentVisitor(std::shared_ptr&lt; b2World &gt; world, std::shared_ptr&lt; ContactListener &gt; contactListener)'],['../class_install_component_visitor.html#a7bf3d7ca79da1876c258996b6e18a49b',1,'InstallComponentVisitor::InstallComponentVisitor(const InstallComponentVisitor &amp;)=delete']]],
   ['installphysics_4',['InstallPhysics',['../classcse335_1_1_physics_polygon.html#a5b6df866d20fa5eaefb898f16dd8b22d',1,'cse335::PhysicsPolygon']]],
   ['iscircle_5',['IsCircle',['../classcse335_1_1_polygon.html#ab937fed97038a0738ad59195b3af2a92',1,'cse335::Polygon']]],
   ['isclickable_6',['IsClickable',['../class_actor.html#a5a1452bb2bc14c0cfeddbc7c345e331b',1,'Actor']]],

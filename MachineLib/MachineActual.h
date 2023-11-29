@@ -46,6 +46,12 @@ private:
 public:
     MachineActual();
 
+    /// Copy constructor (disabled)
+    MachineActual(const MachineActual &) = delete;
+
+    /// Assignment operator (disabled)
+    void operator=(const MachineActual &) = delete;
+
     void Draw(std::shared_ptr<wxGraphicsContext> graphics);
 
     wxPoint GetLocation() const;

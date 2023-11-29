@@ -11,13 +11,14 @@
  * Version history:
  * 1.00 Initial version for FS23 project 2
  * 1.01 Revised to work prior to physics installation
+ * 1.02 Disabled the ability to use DrawPolygon directly
  */
 
 #pragma once
 
 #include "Polygon.h"
-#include "b2_math.h"
-#include "b2_body.h"
+#include <b2_math.h>
+#include <b2_body.h>
 
 class b2Body;
 class b2World;
@@ -38,6 +39,8 @@ namespace cse335
 class PhysicsPolygon : public Polygon
 {
 private:
+    using Polygon::DrawPolygon;
+
     /// The physics system body for this component
     /// Null until installed in the physics system
     b2Body *mBody = nullptr;

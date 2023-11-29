@@ -21,6 +21,12 @@ private:
 public:
     Body();
 
+    /// Copy constructor (disabled)
+    Body(const Body &) = delete;
+
+    /// Assignment operator (disabled)
+    void operator=(const Body &) = delete;
+
     void Draw(std::shared_ptr<wxGraphicsContext> graphics) override;
 
     /**

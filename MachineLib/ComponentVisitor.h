@@ -14,12 +14,22 @@ class Hamster;
 /**
  * Base Visitor class for components
  */
-class ComponentVisitor {
+class ComponentVisitor
+{
 protected:
     ComponentVisitor() {}
 
 public:
+    /**
+     * Destructor
+     */
     virtual ~ComponentVisitor() {};
+
+    /// Copy constructor (disabled)
+    ComponentVisitor(const ComponentVisitor &) = delete;
+
+    /// Assignment operator (disabled)
+    void operator=(const ComponentVisitor &) = delete;
 
     /**
      * Visit a Body component
@@ -45,7 +55,5 @@ public:
      */
     virtual void VisitHamster(Hamster *hamster) {}
 };
-
-
 
 #endif //CANADIANEXPERIENCE_MACHINELIB_COMPONENTVISITOR_H

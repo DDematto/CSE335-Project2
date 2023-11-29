@@ -8,19 +8,26 @@ var hierarchy =
     ] ],
     [ "b2ContactListener", null, [
       [ "ContactListener", "class_contact_listener.html", null ],
-      [ "Goal", "class_goal.html", null ]
+      [ "Conveyor", "class_conveyor.html", null ],
+      [ "Goal", "class_goal.html", null ],
+      [ "Hamster", "class_hamster.html", null ]
     ] ],
     [ "b2Draw", null, [
       [ "DebugDraw", "class_debug_draw.html", null ]
     ] ],
     [ "Component", "class_component.html", [
       [ "Body", "class_body.html", [
-        [ "DynamicBody", "class_dynamic_body.html", null ]
+        [ "DynamicBody", "class_dynamic_body.html", null ],
+        [ "KinematicBody", "class_kinematic_body.html", null ]
       ] ],
-      [ "Goal", "class_goal.html", null ]
+      [ "Conveyor", "class_conveyor.html", null ],
+      [ "Goal", "class_goal.html", null ],
+      [ "Hamster", "class_hamster.html", null ],
+      [ "Pulley", "class_pulley.html", null ]
     ] ],
     [ "ComponentVisitor", "class_component_visitor.html", [
-      [ "InstallComponentVisitor", "class_install_component_visitor.html", null ]
+      [ "InstallComponentVisitor", "class_install_component_visitor.html", null ],
+      [ "ResetComponentVisitor", "class_reset_component_visitor.html", null ]
     ] ],
     [ "Consts", "class_consts.html", null ],
     [ "Drawable", "class_drawable.html", [
@@ -60,6 +67,12 @@ var hierarchy =
       [ "cse335::PhysicsPolygon", "classcse335_1_1_physics_polygon.html", null ]
     ] ],
     [ "RotatedBitmap", "class_rotated_bitmap.html", null ],
+    [ "RotationSink", "class_rotation_sink.html", [
+      [ "Conveyor", "class_conveyor.html", null ],
+      [ "KinematicBody", "class_kinematic_body.html", null ],
+      [ "Pulley", "class_pulley.html", null ]
+    ] ],
+    [ "RotationSource", "class_rotation_source.html", null ],
     [ "SpartyFactory", "class_sparty_factory.html", null ],
     [ "Timeline", "class_timeline.html", null ],
     [ "wxApp", null, [

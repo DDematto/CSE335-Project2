@@ -88,12 +88,12 @@ void MachineSystem::SetMachineNumber(int number)
 {
     if(number == 1)
     {
-        MachineCFactory factory(mResourcesDir);
+        Machine1Factory factory(mResourcesDir);
         mMachine = factory.Create();
     }
     else if(number == 2)
     {
-        Machine1Factory factory(mResourcesDir);
+        MachineCFactory factory(mResourcesDir);
         mMachine = factory.Create();
     }
 

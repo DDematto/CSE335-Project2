@@ -64,8 +64,8 @@ void Goal::Draw(std::shared_ptr<wxGraphicsContext> graphics)
     graphics->PushState();
 
     mHoop.DrawPolygon(graphics, mPosition.x, mPosition.y, 0);
-    mPost.Draw(graphics);
-    mTarget.Draw(graphics);
+    // mPost.Draw(graphics);
+    // mTarget.Draw(graphics);
 
     // Draw the scoreboard based on the image specified
     graphics->Translate(mPosition.x, mPosition.y);

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['viewedit_2ecpp_0',['ViewEdit.cpp',['../_view_edit_8cpp.html',1,'']]],
-  ['viewedit_2eh_1',['ViewEdit.h',['../_view_edit_8h.html',1,'']]],
-  ['viewtimeline_2ecpp_2',['ViewTimeline.cpp',['../_view_timeline_8cpp.html',1,'']]],
-  ['viewtimeline_2eh_3',['ViewTimeline.h',['../_view_timeline_8h.html',1,'']]]
+  ['timeline_2ecpp_0',['Timeline.cpp',['../_timeline_8cpp.html',1,'']]],
+  ['timeline_2eh_1',['Timeline.h',['../_timeline_8h.html',1,'']]],
+  ['timelinedlg_2ecpp_2',['TimelineDlg.cpp',['../_timeline_dlg_8cpp.html',1,'']]],
+  ['timelinedlg_2eh_3',['TimelineDlg.h',['../_timeline_dlg_8h.html',1,'']]]
 ];

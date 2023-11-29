@@ -14,9 +14,21 @@
 class DynamicBody : public Body
 {
 public:
-    DynamicBody();
+    DynamicBody() = default;
 
-    void SetDynamic();
+    /// Copy constructor (disabled)
+    DynamicBody(const DynamicBody &) = delete;
+
+    /// Assignment operator (disabled)
+    void operator=(const DynamicBody &) = delete;
+
+    /**
+     * Sets Body to Be Dynamic
+     */
+    void SetDynamic()
+    {
+        GetPolygon()->SetDynamic();
+    }
 };
 
 #endif //CANADIANEXPERIENCE_MACHINELIB_DYNAMICBODY_H
