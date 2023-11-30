@@ -10,6 +10,7 @@
 #include "SpartyFactory.h"
 #include "Actor.h"
 #include "ImageDrawable.h"
+#include "MachineDrawable.h"
 
 /// Directory within resources that contains the images.
 const std::wstring ImagesDirectory = L"/images";
@@ -33,6 +34,15 @@ std::shared_ptr<Picture> PictureFactory::Create(std::wstring resourcesDir)
     background->AddDrawable(backgroundI);
     background->SetRoot(backgroundI);
     picture->AddActor(background);
+
+    // Draw the Machine
+    std::shared_ptr<Actor> machineSystem = std::make_shared<Actor>(L"Machine System Actor");
+    machineSystem->SetClickable(false);
+    machineSystem->SetPosition(wxPoint(0, 0));
+    auto machine = std::make_shared<MachineDrawable>(L"Machine System");
+    machineSystem->AddDrawable(machine);
+    machineSystem->SetRoot(machine);
+    picture->AddActor(machineSystem);
 
     // Create a Flag and add it
     auto flag = std::make_shared<Actor>(L"Background");
