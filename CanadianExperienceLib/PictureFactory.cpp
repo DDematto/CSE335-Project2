@@ -40,14 +40,14 @@ std::shared_ptr<Picture> PictureFactory::Create(std::wstring resourcesDir,
     // Create Machine Actor and Add to System & Picture
     auto machineActor = std::make_shared<Actor>(L"Machine Actor");
     machineActor->AddDrawable(machineDrawable);
-    machineDrawable->SetPosition(wxPoint(600, 600));
+    machineDrawable->SetPosition(wxPoint(1200, 1000));
     machineDrawable->SetActor(machineActor);
     picture->AddActor(machineActor);
 
     // Create a Flag and add it
     auto flag = std::make_shared<Actor>(L"Background");
     flag->SetClickable(true);
-    flag->SetPosition(wxPoint(900, 400));
+    flag->SetPosition(wxPoint(1000, 300));
     auto flagI = std::make_shared<ImageDrawable>(L"Flag", imagesDir + L"/flag.png");
     flag->AddDrawable(flagI);
     flagI->SetCenter(wxPoint(127, 294));
@@ -66,7 +66,7 @@ std::shared_ptr<Picture> PictureFactory::Create(std::wstring resourcesDir,
     SpartyFactory spartyFactory;
     auto sparty = spartyFactory.Create(imagesDir);
 
-    sparty->SetPosition(wxPoint(550, 620));
+    sparty->SetPosition(wxPoint(950, 600));
     picture->AddActor(sparty);
 
     return picture;

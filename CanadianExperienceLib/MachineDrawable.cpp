@@ -23,7 +23,10 @@ MachineDrawable::MachineDrawable(const std::wstring &name, const std::wstring &r
 */
 void MachineDrawable::Draw(std::shared_ptr<wxGraphicsContext> graphics)
 {
+    double scale = 0.50f;
+
     graphics->PushState();
+    graphics->Scale(scale, scale);
     mMachine->DrawMachine(graphics);
     mMachine->SetMachineFrame(mActor->GetPicture()->GetTimeline()->GetCurrentFrame());
     graphics->PopState();
