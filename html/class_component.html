@@ -125,10 +125,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const 
 <tr class="separator:aaed2f9fc0c137e985998e8cea69daca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc35cccc94741d38d82e4b4928d81147" id="r_adc35cccc94741d38d82e4b4928d81147"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#adc35cccc94741d38d82e4b4928d81147">Draw</a> (std::shared_ptr&lt; wxGraphicsContext &gt; graphics)</td></tr>
 <tr class="separator:adc35cccc94741d38d82e4b4928d81147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae39b8f7bc515fcd36857c67f1e648b35" id="r_ae39b8f7bc515fcd36857c67f1e648b35"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#ae39b8f7bc515fcd36857c67f1e648b35">Connect</a> (std::shared_ptr&lt; <a class="el" href="class_component.html">Component</a> &gt; component)</td></tr>
-<tr class="separator:ae39b8f7bc515fcd36857c67f1e648b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a805317281cd265d408d1d23ab2a7968d" id="r_a805317281cd265d408d1d23ab2a7968d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#a805317281cd265d408d1d23ab2a7968d">SetRotation</a> (double rotation)</td></tr>
-<tr class="separator:a805317281cd265d408d1d23ab2a7968d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa6208ab717a1001718cf46065845fe1" id="r_afa6208ab717a1001718cf46065845fe1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#afa6208ab717a1001718cf46065845fe1">Update</a> (double elapsed)</td></tr>
 <tr class="separator:afa6208ab717a1001718cf46065845fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25f82d94f7312a14ba543e49742d2f0" id="r_ae25f82d94f7312a14ba543e49742d2f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_component.html#ae25f82d94f7312a14ba543e49742d2f0">Accept</a> (<a class="el" href="class_component_visitor.html">ComponentVisitor</a> &amp;visitor)</td></tr>
@@ -171,38 +167,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const 
 
 </div>
 </div>
-<a id="ae39b8f7bc515fcd36857c67f1e648b35" name="ae39b8f7bc515fcd36857c67f1e648b35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae39b8f7bc515fcd36857c67f1e648b35">&#9670;&#160;</a></span>Connect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Component::Connect </td>
-          <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_component.html">Component</a> &gt;&#160;</td>
-          <td class="paramname"><em>component</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Connect this component to another component </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">component</td><td>The component to connect to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="adc35cccc94741d38d82e4b4928d81147" name="adc35cccc94741d38d82e4b4928d81147"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc35cccc94741d38d82e4b4928d81147">&#9670;&#160;</a></span>Draw()</h2>
 
@@ -237,38 +201,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const 
 
 </div>
 </div>
-<a id="a805317281cd265d408d1d23ab2a7968d" name="a805317281cd265d408d1d23ab2a7968d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a805317281cd265d408d1d23ab2a7968d">&#9670;&#160;</a></span>SetRotation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Component::SetRotation </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>rotation</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the rotation of this component </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rotation</td><td>The rotation in degrees </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="afa6208ab717a1001718cf46065845fe1" name="afa6208ab717a1001718cf46065845fe1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa6208ab717a1001718cf46065845fe1">&#9670;&#160;</a></span>Update()</h2>
 
@@ -299,7 +231,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const 
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_conveyor.html#a0cafbfdca25f4cee9ca9fc71e2417d94">Conveyor</a>, and <a class="el" href="class_hamster.html#a5e7f9ae0df6b11fcf739b6e9f28e4a45">Hamster</a>.</p>
+<p>Reimplemented in <a class="el" href="class_conveyor.html#a0cafbfdca25f4cee9ca9fc71e2417d94">Conveyor</a>, <a class="el" href="class_hamster.html#a5e7f9ae0df6b11fcf739b6e9f28e4a45">Hamster</a>, and <a class="el" href="class_pulley.html#a4b5281d7af130da9660688d3262e7895">Pulley</a>.</p>
 
 </div>
 </div>

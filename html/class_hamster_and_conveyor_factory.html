@@ -115,8 +115,8 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_hamster_and_conveyor_factory.html">HamsterAndConveyorFactory</a> &amp;)=delete</td></tr>
 <tr class="memdesc:ae045def04b4c77c0b75dad9e145e7310"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator. <br /></td></tr>
 <tr class="separator:ae045def04b4c77c0b75dad9e145e7310"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea0e07b23df65a934cd370c175e04553" id="r_aea0e07b23df65a934cd370c175e04553"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hamster_and_conveyor_factory.html#aea0e07b23df65a934cd370c175e04553">Create</a> (wxPoint2DDouble hamsterPosition, wxPoint2DDouble conveyorPosition)</td></tr>
-<tr class="separator:aea0e07b23df65a934cd370c175e04553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa3289f672a19bb77ea84c3b8415173" id="r_a1fa3289f672a19bb77ea84c3b8415173"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hamster_and_conveyor_factory.html#a1fa3289f672a19bb77ea84c3b8415173">Create</a> (wxPoint2DDouble hamsterPosition, wxPoint2DDouble conveyorPosition, double pulley1Size=10, double pulley2Size=10)</td></tr>
+<tr class="separator:a1fa3289f672a19bb77ea84c3b8415173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c166c64d781ead7c7cb5ea6df8d16f" id="r_aa7c166c64d781ead7c7cb5ea6df8d16f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_body.html">Body</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hamster_and_conveyor_factory.html#aa7c166c64d781ead7c7cb5ea6df8d16f">AddBall</a> (double placement)</td></tr>
 <tr class="separator:aa7c166c64d781ead7c7cb5ea6df8d16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23e7afe16652fb914f1b1da4f68fd84d" id="r_a23e7afe16652fb914f1b1da4f68fd84d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_hamster.html">Hamster</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hamster_and_conveyor_factory.html#a23e7afe16652fb914f1b1da4f68fd84d">GetHamster</a> ()</td></tr>
@@ -226,8 +226,8 @@ std::shared_ptr&lt; <a class="el" href="class_conveyor.html">Conveyor</a> &gt;&#
 
 </div>
 </div>
-<a id="aea0e07b23df65a934cd370c175e04553" name="aea0e07b23df65a934cd370c175e04553"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea0e07b23df65a934cd370c175e04553">&#9670;&#160;</a></span>Create()</h2>
+<a id="a1fa3289f672a19bb77ea84c3b8415173" name="a1fa3289f672a19bb77ea84c3b8415173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa3289f672a19bb77ea84c3b8415173">&#9670;&#160;</a></span>Create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +242,19 @@ std::shared_ptr&lt; <a class="el" href="class_conveyor.html">Conveyor</a> &gt;&#
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">wxPoint2DDouble&#160;</td>
-          <td class="paramname"><em>conveyorPosition</em>&#160;</td>
+          <td class="paramname"><em>conveyorPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pulley1Size</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pulley2Size</em> = <code>10</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -255,6 +267,8 @@ std::shared_ptr&lt; <a class="el" href="class_conveyor.html">Conveyor</a> &gt;&#
   <table class="params">
     <tr><td class="paramname">hamsterPosition</td><td>Where to place the hamster </td></tr>
     <tr><td class="paramname">conveyorPosition</td><td>Where to place the conveyor </td></tr>
+    <tr><td class="paramname">pulley1Size</td><td>Size of <a class="el" href="class_pulley.html">Pulley</a> 1 </td></tr>
+    <tr><td class="paramname">pulley2Size</td><td>Size of <a class="el" href="class_pulley.html">Pulley</a> 2 </td></tr>
   </table>
   </dd>
 </dl>

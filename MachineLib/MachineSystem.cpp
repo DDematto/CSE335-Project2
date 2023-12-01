@@ -6,8 +6,8 @@
 #include "pch.h"
 #include "MachineSystem.h"
 #include "MachineActual.h"
-#include "MachineCFactory.h"
 #include "Machine1Factory.h"
+#include "CustomMachineFactory.h"
 
 /**
  * Constructor
@@ -93,7 +93,7 @@ void MachineSystem::SetMachineNumber(int number)
     }
     else if(number == 2)
     {
-        MachineCFactory factory(mResourcesDir);
+        CustomMachineFactory factory(mResourcesDir);
         mMachine = factory.Create();
     }
 

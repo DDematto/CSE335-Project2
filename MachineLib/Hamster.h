@@ -32,6 +32,9 @@ private:
     /// States of Hamster as Polygons
     std::vector<std::unique_ptr<cse335::Polygon>> mHamsters;
 
+    /// Stores Initial State of Hamster
+    bool mInitiallyRunning = false;
+
     /// Set If the Hamster is Currently Running
     bool mIsRunning = false;
 
@@ -63,6 +66,8 @@ public:
     void SetSpeed(double speed);
 
     wxPoint2DDouble GetShaftPosition();
+
+    void ResetToInitialState();
 
     /**
      * Visitor Function

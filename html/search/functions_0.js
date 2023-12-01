@@ -12,7 +12,8 @@ var searchData=
   ['adddrawable_9',['AddDrawable',['../class_actor.html#a8e34433ee1853778ddcacd0cec41cd08',1,'Actor']]],
   ['addobserver_10',['AddObserver',['../class_picture.html#aec12b796d2a876d14d91ea92c753bce7',1,'Picture']]],
   ['addpoint_11',['addpoint',['../class_poly_drawable.html#aa0e8161766d2654c528d951bd43d3ce2',1,'PolyDrawable::AddPoint()'],['../class_body.html#a20d353e8d7b53fb4ef0e37ed8c203a8d',1,'Body::AddPoint()'],['../classcse335_1_1_polygon.html#aba26061e39c4609bde3358851d6727ab',1,'cse335::Polygon::AddPoint()']]],
-  ['animchannel_12',['animchannel',['../class_anim_channel.html#a8fe9b131fa4a627013f1f62583bb7742',1,'AnimChannel::AnimChannel()'],['../class_anim_channel.html#a868d01941de891dcd4b7bb0bd5f89463',1,'AnimChannel::AnimChannel(const AnimChannel &amp;)=delete']]],
-  ['assert_13',['Assert',['../classcse335_1_1_polygon.html#a668abed464b4e00fe50b65748a633a99',1,'cse335::Polygon']]],
-  ['averageluminance_14',['AverageLuminance',['../classcse335_1_1_polygon.html#aa727c76d4246740b607b6e2424a33056',1,'cse335::Polygon']]]
+  ['adjustanddrawbelt_12',['AdjustAndDrawBelt',['../class_pulley.html#ac70d36135d8395242ad4ddd2f94d0eb5',1,'Pulley']]],
+  ['animchannel_13',['animchannel',['../class_anim_channel.html#a8fe9b131fa4a627013f1f62583bb7742',1,'AnimChannel::AnimChannel()'],['../class_anim_channel.html#a868d01941de891dcd4b7bb0bd5f89463',1,'AnimChannel::AnimChannel(const AnimChannel &amp;)=delete']]],
+  ['assert_14',['Assert',['../classcse335_1_1_polygon.html#a668abed464b4e00fe50b65748a633a99',1,'cse335::Polygon']]],
+  ['averageluminance_15',['AverageLuminance',['../classcse335_1_1_polygon.html#aa727c76d4246740b607b6e2424a33056',1,'cse335::Polygon']]]
 ];

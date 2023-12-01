@@ -16,8 +16,13 @@
  * Create a hamster that is a conveyor.
  * @param hamsterPosition Where to place the hamster
  * @param conveyorPosition Where to place the conveyor
+ * @param pulley1Size Size of Pulley 1
+ * @param pulley2Size Size of Pulley 2
  */
-void HamsterAndConveyorFactory::Create(wxPoint2DDouble hamsterPosition, wxPoint2DDouble conveyorPosition)
+void HamsterAndConveyorFactory::Create(wxPoint2DDouble hamsterPosition,
+                                       wxPoint2DDouble conveyorPosition,
+                                       double pulley1Size,
+                                       double pulley2Size)
 {
     auto hamster = std::make_shared<Hamster>(mImagesDir);
     mHamster = hamster;
@@ -32,14 +37,14 @@ void HamsterAndConveyorFactory::Create(wxPoint2DDouble hamsterPosition, wxPoint2
     auto conveyorShaft = conveyor->GetShaftPosition();
 
     // The pulley driven by the hamster
-    auto pulley1 = std::make_shared<Pulley>(10);
+    auto pulley1 = std::make_shared<Pulley>(pulley1Size);
     pulley1->SetImage(mImagesDir + L"/pulley3.png");
     pulley1->SetPosition(hamsterShaft);
     mMachine->AddComponent(pulley1);
 
     hamster->GetSource()->ConnectSink(pulley1);
 
-    auto pulley2 = std::make_shared<Pulley>(10);
+    auto pulley2 = std::make_shared<Pulley>(pulley2Size);
     pulley2->SetImage(mImagesDir + L"/pulley3.png");
     pulley2->SetPosition(conveyorShaft);
     mMachine->AddComponent(pulley2);

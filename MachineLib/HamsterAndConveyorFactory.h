@@ -67,7 +67,7 @@ public:
     /// Assignment operator
     void operator=(const HamsterAndConveyorFactory &) = delete;
 
-    void Create(wxPoint2DDouble hamsterPosition, wxPoint2DDouble conveyorPosition);
+    void Create(wxPoint2DDouble hamsterPosition, wxPoint2DDouble conveyorPosition, double pulley1Size = 10, double pulley2Size = 10);
 
     std::shared_ptr<Body> AddBall(double placement);
 

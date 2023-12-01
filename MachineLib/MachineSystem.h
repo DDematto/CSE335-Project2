@@ -27,7 +27,7 @@ private:
     int mFrame = 0;
 
     /// The Machine
-    std::shared_ptr<MachineActual> mMachine;
+    std::shared_ptr<MachineActual> mMachine = nullptr;
 
     /// The resources directory
     std::wstring mResourcesDir;

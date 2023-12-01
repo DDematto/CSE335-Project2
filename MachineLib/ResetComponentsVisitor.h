@@ -23,8 +23,6 @@ class ResetComponentVisitor : public ComponentVisitor
 public:
     /**
      * Constructor
-     * @param world World Object
-     * @param contactListener Contact Listener
      */
     ResetComponentVisitor() {}
 
@@ -57,7 +55,7 @@ public:
      */
     void VisitConveyor(Conveyor *conveyor) override
     {
-
+        conveyor->SetRotation(0, 0);
     }
 
     /**
@@ -66,6 +64,7 @@ public:
      */
     void VisitHamster(Hamster *hamster) override
     {
+        hamster->ResetToInitialState();
     }
 };
 

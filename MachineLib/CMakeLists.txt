@@ -24,7 +24,6 @@ set(SOURCE_FILES
         InstallComponentVisitor.h
         Machine1Factory.h Machine1Factory.cpp
         MachineActual.h MachineActual.cpp
-        MachineCFactory.h MachineCFactory.cpp
         MachineSystem.h MachineSystem.cpp
         Hamster.cpp
         Hamster.h
@@ -37,6 +36,10 @@ set(SOURCE_FILES
         Conveyor.cpp
         Conveyor.h
         ResetComponentsVisitor.h
+        CustomMachineFactory.cpp
+        CustomMachineFactory.h
+        GeneralMachineFactory.cpp
+        GeneralMachineFactory.h
 )
 
 # Removed:

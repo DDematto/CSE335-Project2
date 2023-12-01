@@ -34,7 +34,12 @@ var hierarchy =
       [ "ImageDrawable", "class_image_drawable.html", [
         [ "HeadTop", "class_head_top.html", null ]
       ] ],
+      [ "MachineDrawable", "class_machine_drawable.html", null ],
       [ "PolyDrawable", "class_poly_drawable.html", null ]
+    ] ],
+    [ "GeneralMachineFactory", "class_general_machine_factory.html", [
+      [ "CustomMachineFactory", "class_custom_machine_factory.html", null ],
+      [ "Machine1Factory", "class_machine1_factory.html", null ]
     ] ],
     [ "HamsterAndConveyorFactory", "class_hamster_and_conveyor_factory.html", null ],
     [ "HaroldFactory", "class_harold_factory.html", null ],
@@ -49,9 +54,7 @@ var hierarchy =
       [ "AnimChannelAngle::KeyframeAngle", "class_anim_channel_angle_1_1_keyframe_angle.html", null ],
       [ "AnimChannelPoint::KeyframePoint", "class_anim_channel_point_1_1_keyframe_point.html", null ]
     ] ],
-    [ "Machine1Factory", "class_machine1_factory.html", null ],
     [ "MachineActual", "class_machine_actual.html", null ],
-    [ "MachineCFactory", "class_machine_c_factory.html", null ],
     [ "MachineDemoBaseApp", null, [
       [ "MachineDemoApp", "class_machine_demo_app.html", null ]
     ] ],

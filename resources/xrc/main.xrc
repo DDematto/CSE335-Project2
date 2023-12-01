@@ -49,6 +49,11 @@
 					<label>Timeline Propoerties...</label>
 					<help></help>
 				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="MachineInfo">
+					<label>Machine Information...</label>
+					<help></help>
+				</object>
 			</object>
 			<object class="wxMenu" name="PlayMenu">
 				<label>_Play</label>

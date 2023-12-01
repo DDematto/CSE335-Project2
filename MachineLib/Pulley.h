@@ -38,12 +38,20 @@ private:
     /// Rotation of Pulley
     double mRotation;
 
+    /// Total Time
+    double mTime = 0;
+
+    /// Calculate the rocking effect
+    double mRock = 0;
+
 public:
     Pulley(double radius);
 
     void Drive(std::shared_ptr<Pulley> connectedPulley);
 
     void Draw(std::shared_ptr<wxGraphicsContext> graphics) override;
+
+    void Update(double elapsed) override;
 
     void SetRotation(double rotation, double speed) override;
 
@@ -63,7 +71,18 @@ public:
      */
     wxPoint2DDouble GetPosition() { return mPosition; }
 
-    double GetRotation() { return mRotation; }
+    /**
+     * Returns the Radius of the Pulley
+     * @return
+     */
+    double GetRadius() { return mRadius; }
+
+    wxPoint2DDouble CalculateTangentPoint(wxPoint2DDouble position, double rotation, double beta);
+    void AdjustAndDrawBelt(std::shared_ptr<wxGraphicsContext> graphics,
+                           wxPoint2DDouble point1,
+                           wxPoint2DDouble point2,
+                           double offsetX,
+                           double offsetY);
 };
 
 #endif //CANADIANEXPERIENCE_MACHINELIB_PULLEY_H

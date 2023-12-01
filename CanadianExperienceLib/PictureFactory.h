@@ -9,13 +9,16 @@
 #define CANADIANEXPERIENCE_PICTUREFACTORY_H
 
 class Picture;
+class MachineDrawable;
 
 /**
  * A factory class that builds our picture.
  */
-class PictureFactory {
+class PictureFactory
+{
 public:
-    std::shared_ptr<Picture> Create(std::wstring resourcesDir);
+    std::shared_ptr<Picture> Create(std::wstring resourcesDir,
+                                    std::shared_ptr<MachineDrawable> machineDrawable);
 };
 
 #endif //CANADIANEXPERIENCE_PICTUREFACTORY_H

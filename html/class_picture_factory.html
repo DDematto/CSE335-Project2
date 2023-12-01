@@ -100,14 +100,14 @@ $(document).ready(function(){initNavTree('class_picture_factory.html',''); initR
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9324f4b8fd2e4b9e4d58a2853d24a16f" id="r_a9324f4b8fd2e4b9e4d58a2853d24a16f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_picture.html">Picture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_picture_factory.html#a9324f4b8fd2e4b9e4d58a2853d24a16f">Create</a> (std::wstring resourcesDir)</td></tr>
-<tr class="separator:a9324f4b8fd2e4b9e4d58a2853d24a16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a96ff04baf6d498b23bbbad8ab2972b" id="r_a3a96ff04baf6d498b23bbbad8ab2972b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_picture.html">Picture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_picture_factory.html#a3a96ff04baf6d498b23bbbad8ab2972b">Create</a> (std::wstring resourcesDir, std::shared_ptr&lt; <a class="el" href="class_machine_drawable.html">MachineDrawable</a> &gt; machineDrawable)</td></tr>
+<tr class="separator:a3a96ff04baf6d498b23bbbad8ab2972b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A factory class that builds our picture. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9324f4b8fd2e4b9e4d58a2853d24a16f" name="a9324f4b8fd2e4b9e4d58a2853d24a16f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9324f4b8fd2e4b9e4d58a2853d24a16f">&#9670;&#160;</a></span>Create()</h2>
+<a id="a3a96ff04baf6d498b23bbbad8ab2972b" name="a3a96ff04baf6d498b23bbbad8ab2972b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a96ff04baf6d498b23bbbad8ab2972b">&#9670;&#160;</a></span>Create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -116,14 +116,25 @@ Public Member Functions</h2></td></tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="class_picture.html">Picture</a> &gt; PictureFactory::Create </td>
           <td>(</td>
           <td class="paramtype">std::wstring&#160;</td>
-          <td class="paramname"><em>resourcesDir</em></td><td>)</td>
+          <td class="paramname"><em>resourcesDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_machine_drawable.html">MachineDrawable</a> &gt;&#160;</td>
+          <td class="paramname"><em>machineDrawable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Factory method to create a new picture. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">resourcesDir</td><td>Directory that contains the resources for this application </td></tr>
+    <tr><td class="paramname">machineDrawable</td><td>Passed in Machine <a class="el" href="class_drawable.html">Drawable</a> Object </td></tr>
   </table>
   </dd>
 </dl>

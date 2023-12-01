@@ -10,6 +10,7 @@
 class ViewEdit;
 class ViewTimeline;
 class Picture;
+class IMachineSystem;
 
 /**
  * The top-level (main) frame of the application
@@ -23,8 +24,8 @@ private:
     /// View class for the timeline
     ViewTimeline *mViewTimeline;
 
-    void OnExit(wxCommandEvent& event);
-    void OnAbout(wxCommandEvent&);
+    void OnExit(wxCommandEvent &event);
+    void OnAbout(wxCommandEvent &);
     void OnClose(wxCloseEvent &event);
 
     /// The resources directory to use

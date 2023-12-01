@@ -20,7 +20,10 @@ RotationSource::RotationSource()
  */
 void RotationSource::UpdateRotation(double rotation, double speed)
 {
-    mSink->SetRotation(rotation, speed);
+    if(mSink != nullptr)
+    {
+        mSink->SetRotation(rotation, speed);
+    }
 }
 
 /**
@@ -29,6 +32,5 @@ void RotationSource::UpdateRotation(double rotation, double speed)
  */
 void RotationSource::ConnectSink(std::shared_ptr<RotationSink> sink)
 {
-
     mSink = sink;
 }

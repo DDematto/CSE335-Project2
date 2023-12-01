@@ -18,9 +18,11 @@ const std::wstring ImagesDirectory = L"/images";
 /**
  * Factory method to create a new picture.
  * @param resourcesDir Directory that contains the resources for this application
+ * @param machineDrawable Passed in Machine Drawable Object
  * @return The created picture
  */
-std::shared_ptr<Picture> PictureFactory::Create(std::wstring resourcesDir)
+std::shared_ptr<Picture> PictureFactory::Create(std::wstring resourcesDir,
+                                                std::shared_ptr<MachineDrawable> machineDrawable)
 {
     auto imagesDir = resourcesDir + ImagesDirectory;
 
@@ -35,14 +37,12 @@ std::shared_ptr<Picture> PictureFactory::Create(std::wstring resourcesDir)
     background->SetRoot(backgroundI);
     picture->AddActor(background);
 
-    // Draw the Machine
-    std::shared_ptr<Actor> machineSystem = std::make_shared<Actor>(L"Machine System Actor");
-    machineSystem->SetClickable(false);
-    machineSystem->SetPosition(wxPoint(0, 0));
-    auto machine = std::make_shared<MachineDrawable>(L"Machine System");
-    machineSystem->AddDrawable(machine);
-    machineSystem->SetRoot(machine);
-    picture->AddActor(machineSystem);
+    // Create Machine Actor and Add to System & Picture
+    auto machineActor = std::make_shared<Actor>(L"Machine Actor");
+    machineActor->AddDrawable(machineDrawable);
+    machineDrawable->SetPosition(wxPoint(600, 600));
+    machineDrawable->SetActor(machineActor);
+    picture->AddActor(machineActor);
 
     // Create a Flag and add it
     auto flag = std::make_shared<Actor>(L"Background");

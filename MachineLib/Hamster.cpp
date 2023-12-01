@@ -119,13 +119,20 @@ void Hamster::Update(double elapsed)
     double normalizedRotation = fmod(fabs(totalRotation), 1.0);
 
     // Determine the current image based on the normalized rotation
-    if(normalizedRotation < 0.25) {
+    if(normalizedRotation < 0.25)
+    {
         mHamsterIndex = 1; // Image 1
-    } else if(normalizedRotation < 0.50) {
+    }
+    else if(normalizedRotation < 0.50)
+    {
         mHamsterIndex = 2; // Image 2
-    } else if(normalizedRotation < 0.75) {
+    }
+    else if(normalizedRotation < 0.75)
+    {
         mHamsterIndex = 3; // Image 3
-    } else {
+    }
+    else
+    {
         mHamsterIndex = 2; // Back to Image 2
     }
 
@@ -140,7 +147,7 @@ void Hamster::Update(double elapsed)
 void Hamster::BeginContact(b2Contact *contact)
 {
     b2ContactListener::BeginContact(contact);
-    SetInitiallyRunning(true);
+    mIsRunning = true;
 }
 
 /**
@@ -149,8 +156,8 @@ void Hamster::BeginContact(b2Contact *contact)
  */
 void Hamster::SetInitiallyRunning(bool isRunning)
 {
+    mInitiallyRunning = isRunning;
     mIsRunning = isRunning;
-
 }
 
 /**
@@ -169,6 +176,22 @@ void Hamster::SetSpeed(double speed)
 wxPoint2DDouble Hamster::GetShaftPosition()
 {
     return mHamsterCage.GetPosition() + HamsterShaftOffset;
+}
+
+/**
+ * Reset Initial State
+ */
+void Hamster::ResetToInitialState()
+{
+    mIsRunning = mInitiallyRunning;
+    mRotation = 0;
+    mHamsterIndex = 0;
+
+    if(mIsRunning)
+    {
+        mHamsterIndex = 1;
+    }
+
 }
 
 

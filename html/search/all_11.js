@@ -12,7 +12,7 @@ var searchData=
   ['timelinedlg_9',['timelinedlg',['../class_timeline_dlg.html',1,'TimelineDlg'],['../class_timeline_dlg.html#a1635eb867e54b50fc708af738bc14156',1,'TimelineDlg::TimelineDlg()']]],
   ['timelinedlg_2ecpp_10',['TimelineDlg.cpp',['../_timeline_dlg_8cpp.html',1,'']]],
   ['timelinedlg_2eh_11',['TimelineDlg.h',['../_timeline_dlg_8h.html',1,'']]],
-  ['topbeamandramp_12',['TopBeamAndRamp',['../class_machine1_factory.html#a6996433963637fd53ab870647b686092',1,'Machine1Factory']]],
+  ['topbeamandramp_12',['TopBeamAndRamp',['../class_general_machine_factory.html#aeb9a263e0c49efd85160751e9841c3c1',1,'GeneralMachineFactory']]],
   ['transformpoint_13',['TransformPoint',['../class_head_top.html#a3a961d0d689b936d4e7eea4761342607',1,'HeadTop']]],
   ['tween_14',['tween',['../class_anim_channel.html#aa7c2456c737e042024dd152e808922bf',1,'AnimChannel::Tween()'],['../class_anim_channel_angle.html#a56f271eebeb7b21aadb3cd9a18ce9b05',1,'AnimChannelAngle::Tween()'],['../class_anim_channel_point.html#a9128af210dd73719389545c70332acd7',1,'AnimChannelPoint::Tween()']]]
 ];
