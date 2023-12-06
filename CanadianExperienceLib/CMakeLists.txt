@@ -22,7 +22,9 @@ set(SOURCE_FILES
         AnimChannelAngle.cpp AnimChannelAngle.h
         AnimChannelPoint.cpp AnimChannelPoint.h
         MachineDrawable.cpp
-        MachineDrawable.h)
+        MachineDrawable.h
+        MachineDataDlg.cpp
+        MachineDataDlg.h)
 
 find_package(wxWidgets COMPONENTS core base xrc html xml REQUIRED)
 include(${wxWidgets_USE_FILE})

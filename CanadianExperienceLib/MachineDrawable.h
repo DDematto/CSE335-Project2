@@ -19,6 +19,9 @@ private:
     /// Machine System
     std::shared_ptr<IMachineSystem> mMachine;
 
+    /// Start Frame
+    int mStartFrame = 0;
+
     /// Actor Component
     std::shared_ptr<Actor> mActor;
 
@@ -26,31 +29,27 @@ private:
     wxFrame *mParent;
 
 public:
-    /**
-     * Constructor
-     * @param name Name of Drawable
-     * @param resourcesDir Resource Directory
-     * @param parent Parent Frame
-     */
     MachineDrawable(const std::wstring &name, const std::wstring &resourcesDir, wxFrame *parent);
 
     void Draw(std::shared_ptr<wxGraphicsContext> graphics) override;
 
     bool HitTest(wxPoint point) override;
 
-    void ShowDialog(wxCommandEvent &event);
+    void ShowSwitchDialog(wxCommandEvent &event);
 
-    /**
-     * Sets Position in Machine System
-     * @param position wxPoint
-     */
+    void MachineDrawable::ShowStartDialog(wxCommandEvent &event);
+
     void SetPosition(wxPoint position);
 
-    /**
-     * Sets Actor Associated with MachineDrawable
-     * @param actor Actor Object
-     */
     void SetActor(std::shared_ptr<Actor> actor);
+
+    int GetStartFrame() const { return mStartFrame; }
+
+    void SetStartFrame(int time) { mStartFrame = time; }
+
+    int GetMachineType() const { return mMachine->GetMachineNumber(); }
+
+    void SetMachineType(int machineType) { mMachine->SetMachineNumber(machineType); }
 };
 
 #endif //CANADIANEXPERIENCE_CANADIANEXPERIENCELIB_MACHINEDRAWABLE_H

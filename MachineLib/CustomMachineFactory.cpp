@@ -32,7 +32,7 @@ std::shared_ptr<MachineActual> CustomMachineFactory::Create()
     machine->AddComponent(floor);
 
     //
-    // Testing
+    // Showing Off Different Sized Pulleys Working
     //
     auto hamster = std::make_shared<Hamster>(GetImageDir());
     hamster->SetPosition(-250, 100);

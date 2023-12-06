@@ -9,14 +9,12 @@
 #include "PictureObserver.h"
 #include "Actor.h"
 
-
 /**
  * Constructor
 */
 Picture::Picture()
 {
 }
-
 
 /**
  * Set the current animation time
@@ -30,7 +28,7 @@ void Picture::SetAnimationTime(double time)
     mTimeline.SetCurrentTime(time);
     UpdateObservers();
 
-    for (auto actor : mActors)
+    for(auto actor : mActors)
     {
         actor->GetKeyframe();
     }
@@ -49,7 +47,7 @@ double Picture::GetAnimationTime()
  * Add an observer to this picture.
  * @param observer The observer to add
  */
-void Picture::AddObserver(PictureObserver* observer)
+void Picture::AddObserver(PictureObserver *observer)
 {
     mObservers.push_back(observer);
 }
@@ -58,10 +56,10 @@ void Picture::AddObserver(PictureObserver* observer)
  * Remove an observer from this picture
  * @param observer The observer to remove
  */
-void Picture::RemoveObserver(PictureObserver* observer)
+void Picture::RemoveObserver(PictureObserver *observer)
 {
     auto loc = find(std::begin(mObservers), std::end(mObservers), observer);
-    if (loc != std::end(mObservers))
+    if(loc != std::end(mObservers))
     {
         mObservers.erase(loc);
     }
@@ -72,7 +70,7 @@ void Picture::RemoveObserver(PictureObserver* observer)
  */
 void Picture::UpdateObservers()
 {
-    for (auto observer : mObservers)
+    for(auto observer : mObservers)
     {
         observer->UpdateObserver();
     }
@@ -84,7 +82,7 @@ void Picture::UpdateObservers()
  */
 void Picture::Draw(std::shared_ptr<wxGraphicsContext> graphics)
 {
-    for (auto actor : mActors)
+    for(auto actor : mActors)
     {
         actor->Draw(graphics);
     }
@@ -100,12 +98,11 @@ void Picture::AddActor(std::shared_ptr<Actor> actor)
     actor->SetPicture(this);
 }
 
-
 /**
 * Save the picture animation to a file
 * @param filename File to save to.
 */
-void Picture::Save(const wxString& filename)
+void Picture::Save(const wxString &filename)
 {
     wxXmlDocument xmlDoc;
 
@@ -115,10 +112,18 @@ void Picture::Save(const wxString& filename)
     // Save the timeline animation into the XML
     mTimeline.Save(root);
 
-    //
-    // It is possible to add attributes to the root node here
-    //
-    //root->AddAttribute(L"something", mSomething);
+    // Store All Machine Data
+    root->AddAttribute(mMachineOne->GetName() + L"Start_Frame",
+                       wxString::Format(wxT("%i"), mMachineOne->GetStartFrame()));
+
+    root->AddAttribute(mMachineTwo->GetName() + L"Start_Frame",
+                       wxString::Format(wxT("%i"), mMachineTwo->GetStartFrame()));
+
+    root->AddAttribute(mMachineOne->GetName() + L"Machine_Type",
+                       wxString::Format(wxT("%i"), mMachineOne->GetMachineType()));
+
+    root->AddAttribute(mMachineTwo->GetName() + L"Machine_Type",
+                       wxString::Format(wxT("%i"), mMachineTwo->GetMachineType()));
 
     if(!xmlDoc.Save(filename, wxXML_NO_INDENTATION))
     {
@@ -127,13 +132,11 @@ void Picture::Save(const wxString& filename)
     }
 }
 
-
-
 /**
 * Load a picture animation from a file
 * @param filename file to load from
 */
-void Picture::Load(const wxString& filename)
+void Picture::Load(const wxString &filename)
 {
     wxXmlDocument xmlDoc;
     if(!xmlDoc.Load(filename))
@@ -148,10 +151,18 @@ void Picture::Load(const wxString& filename)
     // Load the animation from the XML
     mTimeline.Load(root);
 
-    //
-    // It is possible to load attributes from the root node here
-    //
-    // mSomething = root->GetAttribute(L"something", L"default");
+    // Load All Machine Data
+    int machineOneStartFrame = wxAtoi(root->GetAttribute(mMachineOne->GetName() + L"Start_Frame", L"0"));
+    int machineTwoStartFrame = wxAtoi(root->GetAttribute(mMachineTwo->GetName() + L"Start_Frame", L"0"));
+
+    mMachineOne->SetStartFrame(machineOneStartFrame);
+    mMachineTwo->SetStartFrame(machineTwoStartFrame);
+
+    int machineOneType = wxAtoi(root->GetAttribute(mMachineOne->GetName() + L"Machine_Type", L"0"));
+    int machineTwoType = wxAtoi(root->GetAttribute(mMachineTwo->GetName() + L"Machine_Type", L"0"));
+
+    mMachineOne->SetMachineType(machineOneType);
+    mMachineTwo->SetMachineType(machineTwoType);
 
     SetAnimationTime(0);
     UpdateObservers();

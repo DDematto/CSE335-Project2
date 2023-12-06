@@ -91,8 +91,6 @@ public:
     void Save(wxXmlNode* root);
 
     void Load(wxXmlNode* root);
-
-
 };
 
 #endif //CANADIANEXPERIENCE_TIMELINE_H

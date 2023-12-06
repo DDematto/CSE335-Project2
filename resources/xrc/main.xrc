@@ -50,8 +50,21 @@
 					<help></help>
 				</object>
 				<object class="separator" />
-				<object class="wxMenuItem" name="MachineInfo">
-					<label>Machine Information...</label>
+				<object class="wxMenuItem" name="MachineInfoOne">
+					<label>Machine System 1 Switch</label>
+					<help></help>
+				</object>
+				<object class="wxMenuItem" name="MachineInfoTwo">
+					<label>Machine System 2 Switch</label>
+					<help></help>
+				</object>
+				<object class="separator" />
+				<object class="wxMenuItem" name="MachineStartOne">
+					<label>Machine 1 Start</label>
+					<help></help>
+				</object>
+				<object class="wxMenuItem" name="MachineStartTwo">
+					<label>Machine 2 Start</label>
 					<help></help>
 				</object>
 			</object>
@@ -201,6 +214,63 @@
 						<flag>wxALL|wxEXPAND</flag>
 						<border>5</border>
 						<object class="wxTextCtrl" name="TimelineDlgFrameRate">
+							<value></value>
+						</object>
+					</object>
+				</object>
+			</object>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxStdDialogButtonSizer">
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="wxID_OK">
+							<label>&amp;OK</label>
+						</object>
+					</object>
+					<object class="button">
+						<flag>wxALIGN_CENTER_HORIZONTAL|wxALL</flag>
+						<border>5</border>
+						<object class="wxButton" name="wxID_CANCEL">
+							<label>&amp;Cancel</label>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+	<object class="wxDialog" name="MachineDataDlg">
+		<style>wxDEFAULT_DIALOG_STYLE</style>
+		<title>Machine Start Time</title>
+		<centered>1</centered>
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<option>1</option>
+				<flag>wxEXPAND</flag>
+				<border>5</border>
+				<object class="wxGridSizer">
+					<rows>1</rows>
+					<cols>2</cols>
+					<vgap>0</vgap>
+					<hgap>0</hgap>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL</flag>
+						<border>5</border>
+						<object class="wxStaticText" name="m_staticText2">
+							<label>Start Frame:</label>
+							<wrap>-1</wrap>
+						</object>
+					</object>
+					<object class="sizeritem">
+						<option>0</option>
+						<flag>wxALIGN_CENTER_VERTICAL|wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<object class="wxTextCtrl" name="MachineDataDlgStartFrame">
 							<value></value>
 						</object>
 					</object>

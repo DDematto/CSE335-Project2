@@ -9,6 +9,7 @@
 #pragma once
 
 #include "Timeline.h"
+#include "MachineDrawable.h"
 
 class PictureObserver;
 class Actor;
@@ -31,6 +32,11 @@ private:
     /// The animation timeline
     Timeline mTimeline;
 
+    /// Reference to First Machine
+    std::shared_ptr<MachineDrawable> mMachineOne;
+    /// Reference to Second Machine
+    std::shared_ptr<MachineDrawable> mMachineTwo;
+
 public:
     Picture();
 
@@ -48,19 +54,19 @@ public:
      * Get the picture size
      * @return Picture size in pixels
      */
-    wxSize GetSize() {return mSize;}
+    wxSize GetSize() { return mSize; }
 
     /**
      * Set the picture size
      * @param size Picture size in pixels
      */
-    void SetSize(wxSize size) {mSize = size;}
+    void SetSize(wxSize size) { mSize = size; }
 
     /**
      * Get a pointer to the Timeline object
      * @return Pointer to the Timeline object
      */
-    Timeline *GetTimeline() {return &mTimeline;}
+    Timeline *GetTimeline() { return &mTimeline; }
 
     void AddObserver(PictureObserver *observer);
     void RemoveObserver(PictureObserver *observer);
@@ -94,16 +100,15 @@ public:
          * Get value at current position
          * @return Value at mPos in the collection
          */
-        std::shared_ptr<Actor> operator *() const { return mPicture->mActors[mPos]; }
+        std::shared_ptr<Actor> operator*() const { return mPicture->mActors[mPos]; }
 
         /** Increment the iterator
         * @return Reference to this iterator */
-        const ActorIter& operator++()
+        const ActorIter &operator++()
         {
             mPos++;
             return *this;
         }
-
 
     private:
         Picture *mPicture;  ///< Picture we are iterating over
@@ -126,8 +131,12 @@ public:
 
     double GetAnimationTime();
 
-    void Load(const wxString& filename);
+    void Load(const wxString &filename);
 
-    void Save(const wxString& filename);
+    void Save(const wxString &filename);
+
+    void SetMachineOne(const std::shared_ptr<MachineDrawable> &machine) { mMachineOne = machine; }
+
+    void SetMachineTwo(const std::shared_ptr<MachineDrawable> &machine) { mMachineTwo = machine; }
 };
 

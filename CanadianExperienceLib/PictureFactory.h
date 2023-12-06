@@ -16,9 +16,18 @@ class MachineDrawable;
  */
 class PictureFactory
 {
+private:
+    /// The Picture Created for this Factory
+    std::shared_ptr<Picture> mPicture = std::make_shared<Picture>();
+
+    std::wstring mImagesDir;
+
 public:
-    std::shared_ptr<Picture> Create(std::wstring resourcesDir,
-                                    std::shared_ptr<MachineDrawable> machineDrawable);
+    PictureFactory(std::wstring resourcesDir);
+
+    void AddMachine(const std::shared_ptr<MachineDrawable> &machine, wxPoint position);
+
+    std::shared_ptr<Picture> AddActors();
 };
 
 #endif //CANADIANEXPERIENCE_PICTUREFACTORY_H

@@ -19,8 +19,7 @@ const std::wstring ImagesDirectory = L"/images";
  * Constructor
  * @param resourcesDir Directory path containing resources
  */
-MainFrame::MainFrame(std::wstring resourcesDir) :
-    mResourcesDir(resourcesDir)
+MainFrame::MainFrame(std::wstring resourcesDir) : mResourcesDir(resourcesDir)
 {
 
 }
@@ -52,14 +51,21 @@ void MainFrame::Initialize()
     Bind(wxEVT_COMMAND_MENU_SELECTED, &MainFrame::OnAbout, this, wxID_ABOUT);
     Bind(wxEVT_CLOSE_WINDOW, &MainFrame::OnClose, this);
 
-    // Create Machine System
-    auto machineDrawable = std::make_shared<MachineDrawable>(L"Machine System", mResourcesDir, this);
+    // Create Machine System's
+    auto machineDrawableOne = std::make_shared<MachineDrawable>(L"One", mResourcesDir, this);
+    auto machineDrawableTwo = std::make_shared<MachineDrawable>(L"Two", mResourcesDir, this);
 
     //
     // Create the picture
     //
-    PictureFactory factory;
-    mPicture = factory.Create(mResourcesDir, machineDrawable);
+    PictureFactory factory(mResourcesDir);
+    factory.AddMachine(machineDrawableOne, wxPoint(600, 1000));
+    factory.AddMachine(machineDrawableTwo, wxPoint(1800, 1000));
+    mPicture = factory.AddActors();
+
+    // Add Reference in picture
+    mPicture->SetMachineOne(machineDrawableOne);
+    mPicture->SetMachineTwo(machineDrawableTwo);
 
     // Tell the views about the picture
     mViewEdit->SetPicture(mPicture);
