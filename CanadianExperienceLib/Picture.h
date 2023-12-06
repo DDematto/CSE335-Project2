@@ -135,8 +135,17 @@ public:
 
     void Save(const wxString &filename);
 
+    /**
+     * Sets Reference for the First Machine in Picture
+     * @param machine Machine Drawable
+     */
     void SetMachineOne(const std::shared_ptr<MachineDrawable> &machine) { mMachineOne = machine; }
 
+
+    /**
+     * Sets Reference for the Second Machine in Picture
+     * @param machine Machine Drawable
+     */
     void SetMachineTwo(const std::shared_ptr<MachineDrawable> &machine) { mMachineTwo = machine; }
 };
 

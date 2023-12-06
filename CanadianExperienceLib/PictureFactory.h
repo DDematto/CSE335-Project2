@@ -20,6 +20,7 @@ private:
     /// The Picture Created for this Factory
     std::shared_ptr<Picture> mPicture = std::make_shared<Picture>();
 
+    /// Holds Images Directory
     std::wstring mImagesDir;
 
 public:

@@ -12,7 +12,8 @@
 /**
  * Constructor
  * @param parent The parent window we will center in
- * @param timeline Pointer to the timeline we are editing
+ * @param machine Pointer to the machine we are editing
+ * @param maxFrames Maximum amount of Frames in Timeline
  */
 MachineDataDlg::MachineDataDlg(wxWindow *parent, MachineDrawable *machine, int maxFrames) : mMachine(machine)
 {

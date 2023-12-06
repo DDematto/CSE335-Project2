@@ -16,6 +16,8 @@ var dir_2f9826d31180b35be045c47602d5e216 =
     [ "HeadTop.h", "_head_top_8h.html", "_head_top_8h" ],
     [ "ImageDrawable.cpp", "_image_drawable_8cpp.html", null ],
     [ "ImageDrawable.h", "_image_drawable_8h.html", "_image_drawable_8h" ],
+    [ "MachineDataDlg.cpp", "_machine_data_dlg_8cpp.html", null ],
+    [ "MachineDataDlg.h", "_machine_data_dlg_8h.html", "_machine_data_dlg_8h" ],
     [ "MachineDrawable.cpp", "_machine_drawable_8cpp.html", null ],
     [ "MachineDrawable.h", "_machine_drawable_8h.html", "_machine_drawable_8h" ],
     [ "MainFrame.cpp", "_main_frame_8cpp.html", "_main_frame_8cpp" ],

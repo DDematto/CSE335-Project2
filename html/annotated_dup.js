@@ -31,6 +31,7 @@ var annotated_dup =
     [ "KinematicBody", "class_kinematic_body.html", "class_kinematic_body" ],
     [ "Machine1Factory", "class_machine1_factory.html", "class_machine1_factory" ],
     [ "MachineActual", "class_machine_actual.html", "class_machine_actual" ],
+    [ "MachineDataDlg", "class_machine_data_dlg.html", "class_machine_data_dlg" ],
     [ "MachineDemoApp", "class_machine_demo_app.html", "class_machine_demo_app" ],
     [ "MachineDialog", "class_machine_dialog.html", "class_machine_dialog" ],
     [ "MachineDrawable", "class_machine_drawable.html", "class_machine_drawable" ],

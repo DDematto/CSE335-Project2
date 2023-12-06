@@ -59,8 +59,8 @@ void MainFrame::Initialize()
     // Create the picture
     //
     PictureFactory factory(mResourcesDir);
-    factory.AddMachine(machineDrawableOne, wxPoint(600, 1000));
-    factory.AddMachine(machineDrawableTwo, wxPoint(1800, 1000));
+    factory.AddMachine(machineDrawableOne, wxPoint(800, 600));
+    factory.AddMachine(machineDrawableTwo, wxPoint(2000, 600));
     mPicture = factory.AddActors();
 
     // Add Reference in picture

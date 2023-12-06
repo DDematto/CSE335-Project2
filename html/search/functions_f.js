@@ -7,7 +7,8 @@ var searchData=
   ['resetcomponentvisitor_4',['resetcomponentvisitor',['../class_reset_component_visitor.html#ad113619a947c13c5124b5b490052ecc8',1,'ResetComponentVisitor::ResetComponentVisitor()'],['../class_reset_component_visitor.html#a7a502607ad1415ab247f953e31bd839e',1,'ResetComponentVisitor::ResetComponentVisitor(const ResetComponentVisitor &amp;)=delete']]],
   ['resetscore_5',['ResetScore',['../class_goal.html#a6d3de5beae01c28ff7214c6edee2af3a',1,'Goal']]],
   ['resettoinitialstate_6',['ResetToInitialState',['../class_hamster.html#ad01a83f407845a89b3215430cf1b8985',1,'Hamster']]],
-  ['rotatedbitmap_7',['rotatedbitmap',['../class_rotated_bitmap.html#afe9b53e1074898e8222f18a261433a71',1,'RotatedBitmap::RotatedBitmap()'],['../class_rotated_bitmap.html#a63b4472f55252453c201e5d740caa527',1,'RotatedBitmap::RotatedBitmap(const RotatedBitmap &amp;)=delete']]],
-  ['rotatepoint_8',['RotatePoint',['../class_drawable.html#a770de039098cc04888d767a86525f247',1,'Drawable']]],
-  ['rotationsource_9',['rotationsource',['../class_rotation_source.html#abb64b53bf4b949c43f8fd13bd04b963d',1,'RotationSource::RotationSource()'],['../class_rotation_source.html#a2a0bf9d36ce60099a378792c2c1b58df',1,'RotationSource::RotationSource(const RotationSource &amp;)=delete']]]
+  ['rightramp_7',['RightRamp',['../class_custom_machine_factory.html#adef3d17360a18f299f4958852679ee8f',1,'CustomMachineFactory']]],
+  ['rotatedbitmap_8',['rotatedbitmap',['../class_rotated_bitmap.html#afe9b53e1074898e8222f18a261433a71',1,'RotatedBitmap::RotatedBitmap()'],['../class_rotated_bitmap.html#a63b4472f55252453c201e5d740caa527',1,'RotatedBitmap::RotatedBitmap(const RotatedBitmap &amp;)=delete']]],
+  ['rotatepoint_9',['RotatePoint',['../class_drawable.html#a770de039098cc04888d767a86525f247',1,'Drawable']]],
+  ['rotationsource_10',['rotationsource',['../class_rotation_source.html#abb64b53bf4b949c43f8fd13bd04b963d',1,'RotationSource::RotationSource()'],['../class_rotation_source.html#a2a0bf9d36ce60099a378792c2c1b58df',1,'RotationSource::RotationSource(const RotationSource &amp;)=delete']]]
 ];

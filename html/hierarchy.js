@@ -82,6 +82,7 @@ var hierarchy =
       [ "CanadianExperienceApp", "class_canadian_experience_app.html", null ]
     ] ],
     [ "wxDialog", null, [
+      [ "MachineDataDlg", "class_machine_data_dlg.html", null ],
       [ "MachineDialog", "class_machine_dialog.html", null ],
       [ "TimelineDlg", "class_timeline_dlg.html", null ]
     ] ],

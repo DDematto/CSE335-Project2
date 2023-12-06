@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('class_picture_factory.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_picture_factory-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PictureFactory Class Reference</div></div>
 </div><!--header-->
@@ -100,29 +101,87 @@ $(document).ready(function(){initNavTree('class_picture_factory.html',''); initR
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3a96ff04baf6d498b23bbbad8ab2972b" id="r_a3a96ff04baf6d498b23bbbad8ab2972b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_picture.html">Picture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_picture_factory.html#a3a96ff04baf6d498b23bbbad8ab2972b">Create</a> (std::wstring resourcesDir, std::shared_ptr&lt; <a class="el" href="class_machine_drawable.html">MachineDrawable</a> &gt; machineDrawable)</td></tr>
-<tr class="separator:a3a96ff04baf6d498b23bbbad8ab2972b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bdddf8e7c50ce087a9cef4aeeed2b9b" id="r_a4bdddf8e7c50ce087a9cef4aeeed2b9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_picture_factory.html#a4bdddf8e7c50ce087a9cef4aeeed2b9b">PictureFactory</a> (std::wstring resourcesDir)</td></tr>
+<tr class="separator:a4bdddf8e7c50ce087a9cef4aeeed2b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca303eba84582b8836a0b7915dd2198" id="r_a1ca303eba84582b8836a0b7915dd2198"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_picture_factory.html#a1ca303eba84582b8836a0b7915dd2198">AddMachine</a> (const std::shared_ptr&lt; <a class="el" href="class_machine_drawable.html">MachineDrawable</a> &gt; &amp;machine, wxPoint position)</td></tr>
+<tr class="separator:a1ca303eba84582b8836a0b7915dd2198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d2d42d0c0eb54fab4c99aa4de5ecfe" id="r_a88d2d42d0c0eb54fab4c99aa4de5ecfe"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_picture.html">Picture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_picture_factory.html#a88d2d42d0c0eb54fab4c99aa4de5ecfe">AddActors</a> ()</td></tr>
+<tr class="separator:a88d2d42d0c0eb54fab4c99aa4de5ecfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ada05d166d359e92db6596494928368c9" id="r_ada05d166d359e92db6596494928368c9"><td class="memItemLeft" align="right" valign="top"><a id="ada05d166d359e92db6596494928368c9" name="ada05d166d359e92db6596494928368c9"></a>
+std::shared_ptr&lt; <a class="el" href="class_picture.html">Picture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mPicture</b> = std::make_shared&lt;<a class="el" href="class_picture.html">Picture</a>&gt;()</td></tr>
+<tr class="memdesc:ada05d166d359e92db6596494928368c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_picture.html">Picture</a> Created for this Factory. <br /></td></tr>
+<tr class="separator:ada05d166d359e92db6596494928368c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fa2897d439b7077235ae0c19134465c" id="r_a0fa2897d439b7077235ae0c19134465c"><td class="memItemLeft" align="right" valign="top"><a id="a0fa2897d439b7077235ae0c19134465c" name="a0fa2897d439b7077235ae0c19134465c"></a>
+std::wstring&#160;</td><td class="memItemRight" valign="bottom"><b>mImagesDir</b></td></tr>
+<tr class="memdesc:a0fa2897d439b7077235ae0c19134465c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds Images Directory. <br /></td></tr>
+<tr class="separator:a0fa2897d439b7077235ae0c19134465c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A factory class that builds our picture. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3a96ff04baf6d498b23bbbad8ab2972b" name="a3a96ff04baf6d498b23bbbad8ab2972b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a96ff04baf6d498b23bbbad8ab2972b">&#9670;&#160;</a></span>Create()</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4bdddf8e7c50ce087a9cef4aeeed2b9b" name="a4bdddf8e7c50ce087a9cef4aeeed2b9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bdddf8e7c50ce087a9cef4aeeed2b9b">&#9670;&#160;</a></span>PictureFactory()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_picture.html">Picture</a> &gt; PictureFactory::Create </td>
+          <td class="memname">PictureFactory::PictureFactory </td>
           <td>(</td>
           <td class="paramtype">std::wstring&#160;</td>
-          <td class="paramname"><em>resourcesDir</em>, </td>
+          <td class="paramname"><em>resourcesDir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor to Build the <a class="el" href="class_picture.html">Picture</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resourcesDir</td><td>Resources Directory </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a88d2d42d0c0eb54fab4c99aa4de5ecfe" name="a88d2d42d0c0eb54fab4c99aa4de5ecfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88d2d42d0c0eb54fab4c99aa4de5ecfe">&#9670;&#160;</a></span>AddActors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_picture.html">Picture</a> &gt; PictureFactory::AddActors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Factory method to create a new picture. </p><dl class="section return"><dt>Returns</dt><dd>The created picture </dd></dl>
+
+</div>
+</div>
+<a id="a1ca303eba84582b8836a0b7915dd2198" name="a1ca303eba84582b8836a0b7915dd2198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ca303eba84582b8836a0b7915dd2198">&#9670;&#160;</a></span>AddMachine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PictureFactory::AddMachine </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="class_machine_drawable.html">MachineDrawable</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>machine</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_machine_drawable.html">MachineDrawable</a> &gt;&#160;</td>
-          <td class="paramname"><em>machineDrawable</em>&#160;</td>
+          <td class="paramtype">wxPoint&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -131,14 +190,13 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Factory method to create a new picture. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Creates Machine <a class="el" href="class_actor.html">Actor</a> and Adds <a class="el" href="class_drawable.html">Drawable</a> to <a class="el" href="class_actor.html">Actor</a>, then To <a class="el" href="class_picture.html">Picture</a> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">resourcesDir</td><td>Directory that contains the resources for this application </td></tr>
-    <tr><td class="paramname">machineDrawable</td><td>Passed in Machine <a class="el" href="class_drawable.html">Drawable</a> Object </td></tr>
+    <tr><td class="paramname">machine</td><td>Machine <a class="el" href="class_drawable.html">Drawable</a> </td></tr>
+    <tr><td class="paramname">position</td><td>Position for machine to be placed in <a class="el" href="class_picture.html">Picture</a> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The created picture </dd></dl>
 
 </div>
 </div>

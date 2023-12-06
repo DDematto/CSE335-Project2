@@ -31,7 +31,10 @@ public:
     CustomMachineFactory(std::wstring resourcesDir) : GeneralMachineFactory(resourcesDir) {};
 
     std::shared_ptr<MachineActual> Create();
+    void PulleyChain(std::shared_ptr<MachineActual> machine);
+    void LeftRamp(std::shared_ptr<MachineActual> machine, wxPoint2DDouble &position);
+    void RightRamp(std::shared_ptr<MachineActual> machine, wxPoint2DDouble &position);
+    void Ball(std::shared_ptr<MachineActual> machine, wxPoint2DDouble position);
 };
-
 
 #endif //CANADIANEXPERIENCE_MACHINELIB_CUSTOMMACHINEFACTORY_H

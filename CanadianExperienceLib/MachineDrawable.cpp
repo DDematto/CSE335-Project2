@@ -35,7 +35,7 @@ MachineDrawable::MachineDrawable(const std::wstring &name, const std::wstring &r
 */
 void MachineDrawable::Draw(std::shared_ptr<wxGraphicsContext> graphics)
 {
-    double scale = 0.50f;
+    double scale = 0.40f;
 
     auto picture = mActor->GetPicture();
     auto timeline = picture->GetTimeline();

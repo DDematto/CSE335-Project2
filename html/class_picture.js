@@ -17,9 +17,13 @@ var class_picture =
     [ "RemoveObserver", "class_picture.html#ac4e51ede527edeeb1dfdaa802be1db95", null ],
     [ "Save", "class_picture.html#a3497c29970bb3251c0814a71b05075b2", null ],
     [ "SetAnimationTime", "class_picture.html#af69c782352dc54232120bba15f51805c", null ],
+    [ "SetMachineOne", "class_picture.html#a4ea1e3592c989853d19fc50f8198790f", null ],
+    [ "SetMachineTwo", "class_picture.html#a53ff6af3bbbdfcbb5bbbce59c96a5a15", null ],
     [ "SetSize", "class_picture.html#a8c4f0513c261407775e8b3b77507983a", null ],
     [ "UpdateObservers", "class_picture.html#a842d85bdb00578a8988be2d946421f0d", null ],
     [ "mActors", "class_picture.html#a5fbdc20c20bcec513c6ad828a52630e2", null ],
+    [ "mMachineOne", "class_picture.html#a2aefb9df0d37de28be285cfcdb906e3b", null ],
+    [ "mMachineTwo", "class_picture.html#aaa10cef03aee1e7c93b5037723d5961f", null ],
     [ "mObservers", "class_picture.html#aea3175b95476fa9f57af8129085963c0", null ],
     [ "mSize", "class_picture.html#a8efe58f2d66c18c4f902d88d86f5b8b7", null ],
     [ "mTimeline", "class_picture.html#ae257292ec3edca611326c8486b28e438", null ]

@@ -39,16 +39,6 @@ PictureFactory::PictureFactory(std::wstring resourcesDir)
  */
 std::shared_ptr<Picture> PictureFactory::AddActors()
 {
-    // Create a Flag and add it
-    auto flag = std::make_shared<Actor>(L"Background");
-    flag->SetClickable(true);
-    flag->SetPosition(wxPoint(1000, 300));
-    auto flagI = std::make_shared<ImageDrawable>(L"Flag", mImagesDir + L"/flag.png");
-    flag->AddDrawable(flagI);
-    flagI->SetCenter(wxPoint(127, 294));
-    flag->SetRoot(flagI);
-    mPicture->AddActor(flag);
-
     // Create and add Harold
     HaroldFactory haroldFactory;
     auto harold = haroldFactory.Create(mImagesDir);
@@ -64,12 +54,23 @@ std::shared_ptr<Picture> PictureFactory::AddActors()
     sparty->SetPosition(wxPoint(950, 600));
     mPicture->AddActor(sparty);
 
+    // Create a Flag and add it
+    auto flag = std::make_shared<Actor>(L"Background");
+    flag->SetClickable(true);
+    flag->SetPosition(wxPoint(1000, 300));
+    auto flagI = std::make_shared<ImageDrawable>(L"Flag", mImagesDir + L"/flag.png");
+    flag->AddDrawable(flagI);
+    flagI->SetCenter(wxPoint(127, 294));
+    flag->SetRoot(flagI);
+    mPicture->AddActor(flag);
+
     return mPicture;
 }
 
 /**
  * Creates Machine Actor and Adds Drawable to Actor, then To Picture
  * @param machine Machine Drawable
+ * @param position Position for machine to be placed in Picture
  */
 void PictureFactory::AddMachine(const std::shared_ptr<MachineDrawable> &machine, wxPoint position)
 {

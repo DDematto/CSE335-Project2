@@ -16,7 +16,7 @@ var searchData=
   ['onleftdown_13',['onleftdown',['../class_view_edit.html#a54a7b8bd3386efb1dcd39b02dcdc7c14',1,'ViewEdit::OnLeftDown()'],['../class_view_timeline.html#a49696cdceaa5c413497e1f33c4e13402',1,'ViewTimeline::OnLeftDown()']]],
   ['onleftup_14',['onleftup',['../class_view_edit.html#a81bae6b7b35dd2c43c049aad044de6ae',1,'ViewEdit::OnLeftUp()'],['../class_view_timeline.html#a8e585998262dee152ccfb27d417cf089',1,'ViewTimeline::OnLeftUp()']]],
   ['onmousemove_15',['onmousemove',['../class_view_edit.html#a626eb6d63a1d009e2ef1b4b727b5bde9',1,'ViewEdit::OnMouseMove()'],['../class_view_timeline.html#adf0911956f6f5beb951117dfadeb4373',1,'ViewTimeline::OnMouseMove()']]],
-  ['onok_16',['onok',['../class_timeline_dlg.html#a85adba9e3994ec0b7dd92c755826cd9c',1,'TimelineDlg::OnOK()'],['../class_machine_dialog.html#ae03d18488df2d9d487a6d0a2997641b0',1,'MachineDialog::OnOK()']]],
+  ['onok_16',['onok',['../class_machine_data_dlg.html#a8222a4c860ef1a466af1a0360d37715e',1,'MachineDataDlg::OnOK()'],['../class_timeline_dlg.html#a85adba9e3994ec0b7dd92c755826cd9c',1,'TimelineDlg::OnOK()'],['../class_machine_dialog.html#ae03d18488df2d9d487a6d0a2997641b0',1,'MachineDialog::OnOK()']]],
   ['onpaint_17',['onpaint',['../class_view_edit.html#adf406a4c497b98c265ba4b35eafbc046',1,'ViewEdit::OnPaint()'],['../class_view_timeline.html#af45b30ae803c4c286611ded19445074e',1,'ViewTimeline::OnPaint(wxPaintEvent &amp;event)']]],
   ['onplayplay_18',['OnPlayPlay',['../class_view_timeline.html#a7bd2794fc56c3b0d5237afa4f4e49060',1,'ViewTimeline']]],
   ['onplayplayfrombeginning_19',['OnPlayPlayFromBeginning',['../class_view_timeline.html#a1fcf2fc9c49cf7f688dad3d1211dae31',1,'ViewTimeline']]],

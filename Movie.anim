@@ -1,0 +1,982 @@
+<anim numframes="900" framerate="30" OneStart_Frame="210" TwoStart_Frame="120" OneMachine_Type="1" TwoMachine_Type="2">
+<channel name="Background:position">
+<keyframe frame="0" x="0" y="0"/>
+<keyframe frame="30" x="0" y="0"/>
+<keyframe frame="45" x="0" y="0"/>
+<keyframe frame="59" x="0" y="0"/>
+<keyframe frame="90" x="0" y="0"/>
+<keyframe frame="120" x="0" y="0"/>
+<keyframe frame="124" x="0" y="0"/>
+<keyframe frame="180" x="0" y="0"/>
+<keyframe frame="209" x="0" y="0"/>
+<keyframe frame="210" x="0" y="0"/>
+<keyframe frame="240" x="0" y="0"/>
+<keyframe frame="270" x="0" y="0"/>
+<keyframe frame="300" x="0" y="0"/>
+<keyframe frame="330" x="0" y="0"/>
+<keyframe frame="360" x="0" y="0"/>
+<keyframe frame="389" x="0" y="0"/>
+<keyframe frame="420" x="0" y="0"/>
+<keyframe frame="449" x="0" y="0"/>
+<keyframe frame="480" x="0" y="0"/>
+<keyframe frame="509" x="0" y="0"/>
+<keyframe frame="540" x="0" y="0"/>
+<keyframe frame="569" x="0" y="0"/>
+<keyframe frame="600" x="0" y="0"/>
+<keyframe frame="629" x="0" y="0"/>
+<keyframe frame="660" x="0" y="0"/>
+<keyframe frame="691" x="0" y="0"/>
+<keyframe frame="720" x="0" y="0"/>
+<keyframe frame="750" x="0" y="0"/>
+<keyframe frame="780" x="0" y="0"/>
+<keyframe frame="810" x="0" y="0"/>
+<keyframe frame="839" x="0" y="0"/>
+<keyframe frame="870" x="0" y="0"/>
+<keyframe frame="900" x="0" y="0"/>
+</channel>
+<channel name="Background:Background">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="0.000000"/>
+<keyframe frame="900" angle="0.000000"/>
+</channel>
+<channel name="Machine Actor:position">
+<keyframe frame="0" x="0" y="0"/>
+<keyframe frame="30" x="0" y="0"/>
+<keyframe frame="45" x="0" y="0"/>
+<keyframe frame="59" x="0" y="0"/>
+<keyframe frame="90" x="0" y="0"/>
+<keyframe frame="120" x="0" y="0"/>
+<keyframe frame="124" x="0" y="0"/>
+<keyframe frame="180" x="0" y="0"/>
+<keyframe frame="209" x="0" y="0"/>
+<keyframe frame="210" x="0" y="0"/>
+<keyframe frame="240" x="0" y="0"/>
+<keyframe frame="270" x="0" y="0"/>
+<keyframe frame="300" x="0" y="0"/>
+<keyframe frame="330" x="0" y="0"/>
+<keyframe frame="360" x="0" y="0"/>
+<keyframe frame="389" x="0" y="0"/>
+<keyframe frame="420" x="0" y="0"/>
+<keyframe frame="449" x="0" y="0"/>
+<keyframe frame="480" x="0" y="0"/>
+<keyframe frame="509" x="0" y="0"/>
+<keyframe frame="540" x="0" y="0"/>
+<keyframe frame="569" x="0" y="0"/>
+<keyframe frame="600" x="0" y="0"/>
+<keyframe frame="629" x="0" y="0"/>
+<keyframe frame="660" x="0" y="0"/>
+<keyframe frame="691" x="0" y="0"/>
+<keyframe frame="720" x="0" y="0"/>
+<keyframe frame="750" x="0" y="0"/>
+<keyframe frame="780" x="0" y="0"/>
+<keyframe frame="810" x="0" y="0"/>
+<keyframe frame="839" x="0" y="0"/>
+<keyframe frame="870" x="0" y="0"/>
+<keyframe frame="900" x="0" y="0"/>
+</channel>
+<channel name="Machine Actor:One">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="0.000000"/>
+<keyframe frame="900" angle="0.000000"/>
+</channel>
+<channel name="Machine Actor:position">
+<keyframe frame="0" x="0" y="0"/>
+<keyframe frame="30" x="0" y="0"/>
+<keyframe frame="45" x="0" y="0"/>
+<keyframe frame="59" x="0" y="0"/>
+<keyframe frame="90" x="0" y="0"/>
+<keyframe frame="120" x="0" y="0"/>
+<keyframe frame="124" x="0" y="0"/>
+<keyframe frame="180" x="0" y="0"/>
+<keyframe frame="209" x="0" y="0"/>
+<keyframe frame="210" x="0" y="0"/>
+<keyframe frame="240" x="0" y="0"/>
+<keyframe frame="270" x="0" y="0"/>
+<keyframe frame="300" x="0" y="0"/>
+<keyframe frame="330" x="0" y="0"/>
+<keyframe frame="360" x="0" y="0"/>
+<keyframe frame="389" x="0" y="0"/>
+<keyframe frame="420" x="0" y="0"/>
+<keyframe frame="449" x="0" y="0"/>
+<keyframe frame="480" x="0" y="0"/>
+<keyframe frame="509" x="0" y="0"/>
+<keyframe frame="540" x="0" y="0"/>
+<keyframe frame="569" x="0" y="0"/>
+<keyframe frame="600" x="0" y="0"/>
+<keyframe frame="629" x="0" y="0"/>
+<keyframe frame="660" x="0" y="0"/>
+<keyframe frame="691" x="0" y="0"/>
+<keyframe frame="720" x="0" y="0"/>
+<keyframe frame="750" x="0" y="0"/>
+<keyframe frame="780" x="0" y="0"/>
+<keyframe frame="810" x="0" y="0"/>
+<keyframe frame="839" x="0" y="0"/>
+<keyframe frame="870" x="0" y="0"/>
+<keyframe frame="900" x="0" y="0"/>
+</channel>
+<channel name="Machine Actor:Two">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="0.000000"/>
+<keyframe frame="900" angle="0.000000"/>
+</channel>
+<channel name="Background:Flag">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="-1.360000"/>
+<keyframe frame="120" angle="-1.360000"/>
+<keyframe frame="124" angle="-1.360000"/>
+<keyframe frame="180" angle="1.180000"/>
+<keyframe frame="209" angle="-0.060000"/>
+<keyframe frame="210" angle="-0.060000"/>
+<keyframe frame="240" angle="-0.060000"/>
+<keyframe frame="270" angle="-0.060000"/>
+<keyframe frame="300" angle="1.060000"/>
+<keyframe frame="330" angle="1.060000"/>
+<keyframe frame="360" angle="1.060000"/>
+<keyframe frame="389" angle="-0.600000"/>
+<keyframe frame="420" angle="-0.600000"/>
+<keyframe frame="449" angle="-1.640000"/>
+<keyframe frame="480" angle="-1.640000"/>
+<keyframe frame="509" angle="-1.640000"/>
+<keyframe frame="540" angle="-1.640000"/>
+<keyframe frame="569" angle="-1.640000"/>
+<keyframe frame="600" angle="-1.640000"/>
+<keyframe frame="629" angle="-1.640000"/>
+<keyframe frame="660" angle="-1.640000"/>
+<keyframe frame="691" angle="-1.640000"/>
+<keyframe frame="720" angle="-1.640000"/>
+<keyframe frame="750" angle="-1.640000"/>
+<keyframe frame="780" angle="-1.640000"/>
+<keyframe frame="810" angle="-1.320000"/>
+<keyframe frame="839" angle="-1.320000"/>
+<keyframe frame="870" angle="-1.320000"/>
+<keyframe frame="900" angle="-1.320000"/>
+</channel>
+<channel name="Harold:position">
+<keyframe frame="0" x="77" y="652"/>
+<keyframe frame="30" x="425" y="633"/>
+<keyframe frame="45" x="481" y="645"/>
+<keyframe frame="59" x="328" y="633"/>
+<keyframe frame="90" x="328" y="633"/>
+<keyframe frame="120" x="535" y="624"/>
+<keyframe frame="124" x="535" y="624"/>
+<keyframe frame="180" x="123" y="610"/>
+<keyframe frame="209" x="123" y="610"/>
+<keyframe frame="210" x="123" y="610"/>
+<keyframe frame="240" x="123" y="610"/>
+<keyframe frame="270" x="123" y="610"/>
+<keyframe frame="300" x="123" y="610"/>
+<keyframe frame="330" x="123" y="610"/>
+<keyframe frame="360" x="123" y="610"/>
+<keyframe frame="389" x="123" y="610"/>
+<keyframe frame="420" x="311" y="614"/>
+<keyframe frame="449" x="311" y="614"/>
+<keyframe frame="480" x="578" y="696"/>
+<keyframe frame="509" x="428" y="622"/>
+<keyframe frame="540" x="398" y="632"/>
+<keyframe frame="569" x="585" y="641"/>
+<keyframe frame="600" x="290" y="631"/>
+<keyframe frame="629" x="411" y="654"/>
+<keyframe frame="660" x="411" y="654"/>
+<keyframe frame="691" x="581" y="676"/>
+<keyframe frame="720" x="413" y="658"/>
+<keyframe frame="750" x="527" y="663"/>
+<keyframe frame="780" x="290" y="658"/>
+<keyframe frame="810" x="525" y="674"/>
+<keyframe frame="839" x="525" y="674"/>
+<keyframe frame="870" x="-1" y="651"/>
+<keyframe frame="900" x="-1" y="651"/>
+</channel>
+<channel name="Harold:Left Arm">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.500000"/>
+<keyframe frame="59" angle="0.080000"/>
+<keyframe frame="90" angle="0.080000"/>
+<keyframe frame="120" angle="0.080000"/>
+<keyframe frame="124" angle="0.080000"/>
+<keyframe frame="180" angle="2.260000"/>
+<keyframe frame="209" angle="0.120000"/>
+<keyframe frame="210" angle="2.680000"/>
+<keyframe frame="240" angle="2.680000"/>
+<keyframe frame="270" angle="0.200000"/>
+<keyframe frame="300" angle="0.200000"/>
+<keyframe frame="330" angle="2.720000"/>
+<keyframe frame="360" angle="2.720000"/>
+<keyframe frame="389" angle="2.040000"/>
+<keyframe frame="420" angle="2.040000"/>
+<keyframe frame="449" angle="2.040000"/>
+<keyframe frame="480" angle="0.360000"/>
+<keyframe frame="509" angle="0.360000"/>
+<keyframe frame="540" angle="0.360000"/>
+<keyframe frame="569" angle="0.360000"/>
+<keyframe frame="600" angle="0.360000"/>
+<keyframe frame="629" angle="0.360000"/>
+<keyframe frame="660" angle="0.360000"/>
+<keyframe frame="691" angle="0.360000"/>
+<keyframe frame="720" angle="0.360000"/>
+<keyframe frame="750" angle="0.360000"/>
+<keyframe frame="780" angle="0.360000"/>
+<keyframe frame="810" angle="0.360000"/>
+<keyframe frame="839" angle="0.360000"/>
+<keyframe frame="870" angle="0.360000"/>
+<keyframe frame="900" angle="0.360000"/>
+</channel>
+<channel name="Harold:Right Arm">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="-2.720000"/>
+<keyframe frame="270" angle="-0.140000"/>
+<keyframe frame="300" angle="-0.140000"/>
+<keyframe frame="330" angle="-2.620000"/>
+<keyframe frame="360" angle="-2.620000"/>
+<keyframe frame="389" angle="-0.540000"/>
+<keyframe frame="420" angle="-0.540000"/>
+<keyframe frame="449" angle="-0.540000"/>
+<keyframe frame="480" angle="-0.540000"/>
+<keyframe frame="509" angle="-0.540000"/>
+<keyframe frame="540" angle="-0.540000"/>
+<keyframe frame="569" angle="-0.540000"/>
+<keyframe frame="600" angle="-0.540000"/>
+<keyframe frame="629" angle="-0.540000"/>
+<keyframe frame="660" angle="-0.540000"/>
+<keyframe frame="691" angle="-0.540000"/>
+<keyframe frame="720" angle="-0.540000"/>
+<keyframe frame="750" angle="-0.540000"/>
+<keyframe frame="780" angle="-0.540000"/>
+<keyframe frame="810" angle="-0.540000"/>
+<keyframe frame="839" angle="-0.540000"/>
+<keyframe frame="870" angle="-0.540000"/>
+<keyframe frame="900" angle="-0.540000"/>
+</channel>
+<channel name="Harold:Right Hand">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="0.000000"/>
+<keyframe frame="900" angle="0.000000"/>
+</channel>
+<channel name="Harold:Left Hand">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="0.000000"/>
+<keyframe frame="900" angle="0.000000"/>
+</channel>
+<channel name="Harold:Right Leg">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="0.000000"/>
+<keyframe frame="900" angle="0.000000"/>
+</channel>
+<channel name="Harold:Left Leg">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="0.000000"/>
+<keyframe frame="900" angle="0.000000"/>
+</channel>
+<channel name="Harold:Shirt">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="0.000000"/>
+<keyframe frame="900" angle="0.000000"/>
+</channel>
+<channel name="Harold:Vest">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="0.000000"/>
+<keyframe frame="900" angle="0.000000"/>
+</channel>
+<channel name="Harold:Head Bottom">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="0.000000"/>
+<keyframe frame="900" angle="0.000000"/>
+</channel>
+<channel name="Harold:Head Top">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.240000"/>
+<keyframe frame="180" angle="0.240000"/>
+<keyframe frame="209" angle="0.240000"/>
+<keyframe frame="210" angle="0.240000"/>
+<keyframe frame="240" angle="0.240000"/>
+<keyframe frame="270" angle="0.240000"/>
+<keyframe frame="300" angle="0.240000"/>
+<keyframe frame="330" angle="0.240000"/>
+<keyframe frame="360" angle="0.240000"/>
+<keyframe frame="389" angle="-0.000000"/>
+<keyframe frame="420" angle="0.760000"/>
+<keyframe frame="449" angle="0.760000"/>
+<keyframe frame="480" angle="-0.100000"/>
+<keyframe frame="509" angle="-0.100000"/>
+<keyframe frame="540" angle="-0.100000"/>
+<keyframe frame="569" angle="-0.100000"/>
+<keyframe frame="600" angle="-0.100000"/>
+<keyframe frame="629" angle="-0.100000"/>
+<keyframe frame="660" angle="0.400000"/>
+<keyframe frame="691" angle="0.400000"/>
+<keyframe frame="720" angle="0.400000"/>
+<keyframe frame="750" angle="0.400000"/>
+<keyframe frame="780" angle="0.400000"/>
+<keyframe frame="810" angle="0.400000"/>
+<keyframe frame="839" angle="0.400000"/>
+<keyframe frame="870" angle="0.400000"/>
+<keyframe frame="900" angle="0.400000"/>
+</channel>
+<channel name="Harold:Head Top:position">
+<keyframe frame="0" x="0" y="-31"/>
+<keyframe frame="30" x="0" y="-31"/>
+<keyframe frame="45" x="0" y="-31"/>
+<keyframe frame="59" x="0" y="-31"/>
+<keyframe frame="90" x="0" y="-31"/>
+<keyframe frame="120" x="0" y="-31"/>
+<keyframe frame="124" x="0" y="-31"/>
+<keyframe frame="180" x="0" y="-31"/>
+<keyframe frame="209" x="0" y="-31"/>
+<keyframe frame="210" x="0" y="-31"/>
+<keyframe frame="240" x="0" y="-31"/>
+<keyframe frame="270" x="0" y="-31"/>
+<keyframe frame="300" x="0" y="-31"/>
+<keyframe frame="330" x="0" y="-31"/>
+<keyframe frame="360" x="0" y="-31"/>
+<keyframe frame="389" x="0" y="-31"/>
+<keyframe frame="420" x="0" y="-31"/>
+<keyframe frame="449" x="0" y="-31"/>
+<keyframe frame="480" x="0" y="-31"/>
+<keyframe frame="509" x="0" y="-31"/>
+<keyframe frame="540" x="0" y="-31"/>
+<keyframe frame="569" x="0" y="-31"/>
+<keyframe frame="600" x="0" y="-31"/>
+<keyframe frame="629" x="0" y="-31"/>
+<keyframe frame="660" x="0" y="-31"/>
+<keyframe frame="691" x="0" y="-31"/>
+<keyframe frame="720" x="0" y="-31"/>
+<keyframe frame="750" x="0" y="-31"/>
+<keyframe frame="780" x="0" y="-31"/>
+<keyframe frame="810" x="0" y="-31"/>
+<keyframe frame="839" x="0" y="-31"/>
+<keyframe frame="870" x="0" y="-31"/>
+<keyframe frame="900" x="0" y="-31"/>
+</channel>
+<channel name="Sparty:position">
+<keyframe frame="0" x="1042" y="710"/>
+<keyframe frame="30" x="735" y="713"/>
+<keyframe frame="45" x="713" y="711"/>
+<keyframe frame="59" x="845" y="716"/>
+<keyframe frame="90" x="845" y="716"/>
+<keyframe frame="120" x="1010" y="704"/>
+<keyframe frame="124" x="1063" y="689"/>
+<keyframe frame="180" x="648" y="648"/>
+<keyframe frame="209" x="924" y="661"/>
+<keyframe frame="210" x="924" y="661"/>
+<keyframe frame="240" x="924" y="661"/>
+<keyframe frame="270" x="924" y="661"/>
+<keyframe frame="300" x="924" y="661"/>
+<keyframe frame="330" x="924" y="661"/>
+<keyframe frame="360" x="757" y="664"/>
+<keyframe frame="389" x="766" y="689"/>
+<keyframe frame="420" x="766" y="689"/>
+<keyframe frame="449" x="918" y="689"/>
+<keyframe frame="480" x="918" y="689"/>
+<keyframe frame="509" x="748" y="685"/>
+<keyframe frame="540" x="801" y="691"/>
+<keyframe frame="569" x="872" y="684"/>
+<keyframe frame="600" x="540" y="692"/>
+<keyframe frame="629" x="738" y="719"/>
+<keyframe frame="660" x="772" y="719"/>
+<keyframe frame="691" x="887" y="737"/>
+<keyframe frame="720" x="678" y="723"/>
+<keyframe frame="750" x="842" y="721"/>
+<keyframe frame="780" x="559" y="719"/>
+<keyframe frame="810" x="840" y="725"/>
+<keyframe frame="839" x="840" y="725"/>
+<keyframe frame="870" x="575" y="712"/>
+<keyframe frame="900" x="575" y="712"/>
+</channel>
+<channel name="Sparty:Left Leg">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="0.000000"/>
+<keyframe frame="900" angle="0.000000"/>
+</channel>
+<channel name="Sparty:Right Leg">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="0.000000"/>
+<keyframe frame="900" angle="0.000000"/>
+</channel>
+<channel name="Sparty:Torso">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="0.000000"/>
+<keyframe frame="900" angle="-0.240000"/>
+</channel>
+<channel name="Sparty:Left Arm">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="6.080000"/>
+<keyframe frame="124" angle="6.080000"/>
+<keyframe frame="180" angle="6.080000"/>
+<keyframe frame="209" angle="6.080000"/>
+<keyframe frame="210" angle="6.080000"/>
+<keyframe frame="240" angle="7.480000"/>
+<keyframe frame="270" angle="6.220000"/>
+<keyframe frame="300" angle="6.220000"/>
+<keyframe frame="330" angle="7.640000"/>
+<keyframe frame="360" angle="7.640000"/>
+<keyframe frame="389" angle="11.640000"/>
+<keyframe frame="420" angle="11.640000"/>
+<keyframe frame="449" angle="11.640000"/>
+<keyframe frame="480" angle="11.640000"/>
+<keyframe frame="509" angle="11.640000"/>
+<keyframe frame="540" angle="11.640000"/>
+<keyframe frame="569" angle="11.640000"/>
+<keyframe frame="600" angle="11.640000"/>
+<keyframe frame="629" angle="11.640000"/>
+<keyframe frame="660" angle="11.640000"/>
+<keyframe frame="691" angle="11.640000"/>
+<keyframe frame="720" angle="11.640000"/>
+<keyframe frame="750" angle="11.640000"/>
+<keyframe frame="780" angle="11.640000"/>
+<keyframe frame="810" angle="11.640000"/>
+<keyframe frame="839" angle="12.700000"/>
+<keyframe frame="870" angle="14.500000"/>
+<keyframe frame="900" angle="14.500000"/>
+</channel>
+<channel name="Sparty:Right Arm">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="-0.040000"/>
+<keyframe frame="59" angle="0.200000"/>
+<keyframe frame="90" angle="0.200000"/>
+<keyframe frame="120" angle="-1.900000"/>
+<keyframe frame="124" angle="0.040000"/>
+<keyframe frame="180" angle="0.040000"/>
+<keyframe frame="209" angle="0.040000"/>
+<keyframe frame="210" angle="0.040000"/>
+<keyframe frame="240" angle="-1.660000"/>
+<keyframe frame="270" angle="-0.200000"/>
+<keyframe frame="300" angle="-0.200000"/>
+<keyframe frame="330" angle="-1.100000"/>
+<keyframe frame="360" angle="-1.100000"/>
+<keyframe frame="389" angle="0.040000"/>
+<keyframe frame="420" angle="0.040000"/>
+<keyframe frame="449" angle="0.040000"/>
+<keyframe frame="480" angle="0.040000"/>
+<keyframe frame="509" angle="0.040000"/>
+<keyframe frame="540" angle="0.040000"/>
+<keyframe frame="569" angle="0.040000"/>
+<keyframe frame="600" angle="0.040000"/>
+<keyframe frame="629" angle="0.040000"/>
+<keyframe frame="660" angle="0.040000"/>
+<keyframe frame="691" angle="0.040000"/>
+<keyframe frame="720" angle="0.040000"/>
+<keyframe frame="750" angle="0.040000"/>
+<keyframe frame="780" angle="0.040000"/>
+<keyframe frame="810" angle="0.040000"/>
+<keyframe frame="839" angle="1.020000"/>
+<keyframe frame="870" angle="-2.060000"/>
+<keyframe frame="900" angle="-2.060000"/>
+</channel>
+<channel name="Sparty:Head Bottom">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="0.000000"/>
+<keyframe frame="209" angle="0.000000"/>
+<keyframe frame="210" angle="0.000000"/>
+<keyframe frame="240" angle="0.000000"/>
+<keyframe frame="270" angle="0.000000"/>
+<keyframe frame="300" angle="0.000000"/>
+<keyframe frame="330" angle="0.000000"/>
+<keyframe frame="360" angle="0.000000"/>
+<keyframe frame="389" angle="0.000000"/>
+<keyframe frame="420" angle="0.000000"/>
+<keyframe frame="449" angle="0.000000"/>
+<keyframe frame="480" angle="0.000000"/>
+<keyframe frame="509" angle="0.000000"/>
+<keyframe frame="540" angle="0.000000"/>
+<keyframe frame="569" angle="0.000000"/>
+<keyframe frame="600" angle="0.000000"/>
+<keyframe frame="629" angle="0.000000"/>
+<keyframe frame="660" angle="0.000000"/>
+<keyframe frame="691" angle="0.000000"/>
+<keyframe frame="720" angle="0.000000"/>
+<keyframe frame="750" angle="0.000000"/>
+<keyframe frame="780" angle="0.000000"/>
+<keyframe frame="810" angle="0.000000"/>
+<keyframe frame="839" angle="0.000000"/>
+<keyframe frame="870" angle="-0.060000"/>
+<keyframe frame="900" angle="-0.060000"/>
+</channel>
+<channel name="Sparty:Head Top">
+<keyframe frame="0" angle="0.000000"/>
+<keyframe frame="30" angle="0.000000"/>
+<keyframe frame="45" angle="0.000000"/>
+<keyframe frame="59" angle="0.000000"/>
+<keyframe frame="90" angle="0.000000"/>
+<keyframe frame="120" angle="0.000000"/>
+<keyframe frame="124" angle="0.000000"/>
+<keyframe frame="180" angle="-0.360000"/>
+<keyframe frame="209" angle="-0.120000"/>
+<keyframe frame="210" angle="-0.120000"/>
+<keyframe frame="240" angle="-0.120000"/>
+<keyframe frame="270" angle="-0.120000"/>
+<keyframe frame="300" angle="-0.120000"/>
+<keyframe frame="330" angle="0.300000"/>
+<keyframe frame="360" angle="0.300000"/>
+<keyframe frame="389" angle="0.300000"/>
+<keyframe frame="420" angle="0.300000"/>
+<keyframe frame="449" angle="0.300000"/>
+<keyframe frame="480" angle="0.300000"/>
+<keyframe frame="509" angle="0.300000"/>
+<keyframe frame="540" angle="0.300000"/>
+<keyframe frame="569" angle="0.300000"/>
+<keyframe frame="600" angle="0.300000"/>
+<keyframe frame="629" angle="0.300000"/>
+<keyframe frame="660" angle="-0.360000"/>
+<keyframe frame="691" angle="-0.360000"/>
+<keyframe frame="720" angle="-0.360000"/>
+<keyframe frame="750" angle="-0.360000"/>
+<keyframe frame="780" angle="-0.360000"/>
+<keyframe frame="810" angle="-0.360000"/>
+<keyframe frame="839" angle="-0.360000"/>
+<keyframe frame="870" angle="-0.080000"/>
+<keyframe frame="900" angle="-0.080000"/>
+</channel>
+<channel name="Sparty:Head Top:position">
+<keyframe frame="0" x="0" y="-28"/>
+<keyframe frame="30" x="0" y="-28"/>
+<keyframe frame="45" x="0" y="-28"/>
+<keyframe frame="59" x="0" y="-28"/>
+<keyframe frame="90" x="0" y="-28"/>
+<keyframe frame="120" x="-5" y="-24"/>
+<keyframe frame="124" x="-5" y="-24"/>
+<keyframe frame="180" x="-5" y="-24"/>
+<keyframe frame="209" x="12" y="-29"/>
+<keyframe frame="210" x="12" y="-29"/>
+<keyframe frame="240" x="12" y="-29"/>
+<keyframe frame="270" x="12" y="-29"/>
+<keyframe frame="300" x="12" y="-29"/>
+<keyframe frame="330" x="12" y="-29"/>
+<keyframe frame="360" x="12" y="-29"/>
+<keyframe frame="389" x="12" y="-29"/>
+<keyframe frame="420" x="12" y="-29"/>
+<keyframe frame="449" x="12" y="-29"/>
+<keyframe frame="480" x="12" y="-29"/>
+<keyframe frame="509" x="12" y="-29"/>
+<keyframe frame="540" x="12" y="-29"/>
+<keyframe frame="569" x="12" y="-29"/>
+<keyframe frame="600" x="12" y="-29"/>
+<keyframe frame="629" x="12" y="-29"/>
+<keyframe frame="660" x="12" y="-29"/>
+<keyframe frame="691" x="12" y="-29"/>
+<keyframe frame="720" x="12" y="-29"/>
+<keyframe frame="750" x="12" y="-29"/>
+<keyframe frame="780" x="12" y="-29"/>
+<keyframe frame="810" x="12" y="-29"/>
+<keyframe frame="839" x="12" y="-29"/>
+<keyframe frame="870" x="12" y="-29"/>
+<keyframe frame="900" x="12" y="-29"/>
+</channel>
+</anim>
